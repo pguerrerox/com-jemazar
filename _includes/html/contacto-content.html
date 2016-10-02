@@ -1,0 +1,58 @@
+<section class="banner full--width no--padding">
+  <div>
+    <h1 class="color--blanco">Gracias por su interés en Jemazar</h1>
+  </div>
+</section>
+
+<section class="info">
+  <div class="info__contacto padding--between">
+    <p class="no--justify">Puedes contactarnos, <strong>via telefonica</strong> a cualquiera de los siguientes telefonos:</p>
+    <h3>T: (809) 560-2220 <br>
+    T: (829) 222-1230</h3>
+  </div>
+
+  <div class="info__contacto padding--between">
+    <p class="no--justify">Laboramos en el siguiente <strong>horarios</strong>:</p>
+    <h3 class="align--right">Lunes a Viernes - 8:00 AM / 6:00 PM<br>
+      Sabados - 9:00 AM / 1:00 PM</h3>
+  </div>
+
+  <div class="info__contacto padding--between">
+    <p class="no--justify">Tambien puedes visitar nuestras <strong>redes sociales</strong> para informacion adicional:</p>
+    <h3>Facebook<br>
+    Instagram<br>
+    LinkedIn</h3>
+  </div>
+</section>
+
+<section class="mapa">
+  <div class="mapa__lista">
+    <ul>
+      <li><a href="#">super mercado 1</a></li>
+      <li><a href="#">super mercado 2</a></li>
+      <li><a href="#">super mercado 3</a></li>
+      <li><a href="#">super mercado 4</a></li>
+    </ul>
+  </div>
+  <div class="mapa__gmaps">
+    {% include tools/maps.html %}
+
+    <!-- <img src="" alt="" width="300px" height="300px" /> -->
+  </div>
+</section>
+
+<section class="forma">
+  <form class="contacto" action="index.html" method="post">
+    <fieldset title="Informacion de Contacto">
+      <input type="text" name="Nombre" placeholder="John" value="">
+      <input type="text" name="Apellido" placeholder="Smith" value="">
+      <input type="text" name="e-mail" placeholder="johnsmith@gmail.com" value="">
+    </fieldset>
+
+    <fieldset title="Mensaje">
+      <input type="text" name="Asunto" placeholder="" value="">
+      <input type="text" name="Contenido" placeholder="" value="">
+    </fieldset>
+  </form>
+
+</section>

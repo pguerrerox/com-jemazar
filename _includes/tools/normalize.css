@@ -1,0 +1,70 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #003399;
+}
+body {
+  margin: 0;
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "HelveticaNeue", sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+h1{
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: bolder;;
+  font-size: 35px;
+  color:#003399;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2{
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color:#003399;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3{
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  text-align: center;
+}
+p, li{
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 17px;
+  text-align: justify;
+}

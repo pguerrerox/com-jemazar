@@ -1,0 +1,43 @@
+/*CSS para el <footer>*/
+footer{
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #003399;
+  z-index: 1060;
+}
+.footer__content{
+  width: 90vw;
+  margin: auto ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright p{
+  color: white;
+  font-size: 14px;
+  margin: 3px 0;
+}
+.footer__copyright a{
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(0, 255, 0);
+  text-shadow:2px 2px 0 rgb(150, 0, 255);
+}
+.footer__copyright a:hover{
+  color: rgb(150, 0, 255);
+  text-shadow:2px 2px 0 rgb(0, 255, 0);
+}
+.footer__redes{
+  display: flex;
+  flex-direction: row;
+}
+svg{
+  width: 36px;
+  height: auto;
+  padding-left: 10px;
+  fill:white;
+}
+svg:hover{
+  fill:black;
+}

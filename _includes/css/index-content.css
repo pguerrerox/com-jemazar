@@ -1,0 +1,198 @@
+/*CSS para el <section> index-content*/
+
+/*slideshow*/
+.body__slideshow{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 1090;
+}
+.slideshow__indicators{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indicators{
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  border: 1px solid white;
+  z-index: 1000;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.slideshow__selectors{
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.selectors{
+  height: 50px;
+  width: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left{border-radius: 0 5px 5px 0;}
+.right{border-radius: 5px 0 0 5px;}
+.slideshow__slides{
+  position: relative;
+}
+.myslides{
+  width: 100%;
+  max-height: 500px;
+}
+.selectors:hover{
+  background-color: rgb(31, 31, 31);
+}
+.active, .indicators:hover {
+  background-color: #ffffff;
+}
+/***************************************/
+
+/*resto del contenido*/
+.body__content{
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  /*overflow: hidden;*/
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
+  z-index: 1070
+}
+/***************************************/
+
+/*links de empresa*/
+.body__links{
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);;
+  z-index: 1080;
+}
+.links__nuestros{
+  max-width: 90vw;
+  height: auto;
+  margin: 6vh 5vw;
+  display: flex;
+  justify-content: space-around;
+}
+.nuestro__equipo, .nuestra__empresa, .nuestros__productos{
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nuestro__equipo img, .nuestra__empresa img, .nuestros__productos img{
+  max-width: 85%;
+  height: auto;
+}
+.nuestra__empresa {
+  margin: 0 10px;
+}
+.nuestro__equipo figcaption, .nuestra__empresa figcaption, .nuestros__productos figcaption{
+  position: absolute;
+  text-align: center;
+  width: 85%;
+  color: white;
+  background-color: rgb(0, 51, 153);
+  background-color: rgba(0, 51, 153, 0.65);
+  font-size: 15px;
+  line-height: 1em;
+  bottom: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+/***************************************/
+
+/*links de marcas*/
+.body__marcas{
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.marcas__moto{
+  width: 90vw;
+  padding:20px 0 10px 0;
+  color: #003399;
+}
+.marcas__todas {
+  width: 90vw;
+  height: auto;
+  padding:10px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.marcas__rottis, .marcas__baruk, .marcas__nauj, .marcas__costero{
+  width: 300px;
+  margin:10px 15px 10px 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.marcas__rottis img, .marcas__nauj img, .marcas__costero img{
+  max-width: 225px;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+.marcas__baruk img{
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+/***************************************/
+
+/*seccion de novedades*/
+.body__novedades{
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.novedades__tittle{
+  width: 90vw;
+  padding:20px 0 10px 0;
+  color: #003399;
+}
+.novedades__banners{
+  width: 90vw;
+  height: auto;
+  margin: 3vh 2.5vw 6vh 2.5vw;
+  display: flex;
+  justify-content: space-around;
+}
+.banners__1, .banners__2, .banners__3{
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner--size img{
+  max-width: 85%;
+  height: auto;
+}
+/***************************************/

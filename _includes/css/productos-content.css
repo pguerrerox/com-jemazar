@@ -1,0 +1,138 @@
+/*CSS para el <section> productos__content*/
+
+.productos__content{
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  z-index: 1090;
+}
+.body__banner h1{
+  color:#ffffff;
+}
+.body__banner{
+  position: relative;
+  width: 100%;
+  background-color: #003399;
+  background-image: url("/assets/img/xlogo_cortado.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.body__tab{
+  margin: 35px 0;
+  border-bottom: 1px solid #ccc;
+}
+ul.body__tablinks{
+  list-style-type: none;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+ul.body__tablinks li{
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  float: left;
+  margin-right: 1px;
+}
+ul.body__tablinks li a{
+  display: inline-block;
+  color: #ccc;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+ul.body__tablinks li a:hover{
+  background-color: #003399;
+  color: #fff;
+}
+ul.body__tablinks li a:focus, .active{
+  background-color: #003399;
+  color: #ffffff;
+}
+.tablinks__grid{
+  display: none;
+  width: 90%;
+  margin: 0 auto 50px auto;;
+  animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
+}
+.grid--flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+/*.categorias__item{
+  display: block;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  background-image: url("../img/novedades1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+.marcas__content{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+.marcas__content a{
+  text-decoration: none;
+  color: #003399;
+}
+.marcas__content a:hover{
+  text-decoration: underline;
+  color: #001233;
+}
+.marcas__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ccc;
+}
+.marcas__item img{
+  display: block;
+  margin:0 auto;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  transition: width ease 0.3s;
+}
+.marcas__item:hover img{
+  width: 95%;
+}
+.productos__item{
+  display: block;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  background-image: url("../img/novedades3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

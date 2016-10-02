@@ -1,0 +1,11 @@
+---
+---
+
+/*tools*/
+{% include tools/normalize.css  %}
+{% include tools/fonts.css  %}
+
+/*nosotros page*/
+{% include css/header.css %}
+{% include css/nosotros-content.css %}
+{% include css/footer.css %}

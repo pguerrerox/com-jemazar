@@ -1,0 +1,56 @@
+/*CSS para el <header>*/
+header{
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 5px 0;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
+  z-index: 1110;
+}
+.header__content{
+  width: 90vw;
+  margin: auto ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__logo img{
+  width: 200px;
+  height: auto;
+}
+.header__navbar{
+  width: 100%;
+  padding: 0 30px;
+}
+.header__lang{
+  width: 100%;
+  flex-shrink: 3;
+  text-align: right;
+}
+.header__navbar a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #003399;
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: bold;
+}
+.header__lang a{
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 17px;
+  color: #003399;
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: 200;
+}
+.header__navbar a:hover{
+  text-decoration: underline;
+  color: #001233;
+}
+.hr{
+  border-left: thin solid #003399;
+  margin: 0 15px;
+}
