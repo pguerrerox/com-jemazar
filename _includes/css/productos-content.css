@@ -131,7 +131,7 @@ ul.body__tablinks li a:focus, .active{
   width: 250px;
   height: 250px;
   background-color: red;
-  background-image: url("{{site.baseurl}}/img/novedades3.png");
+  background-image: url("{{site.baseurl}}assets/img/novedades3.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
