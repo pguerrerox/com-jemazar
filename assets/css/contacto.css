@@ -2,8 +2,8 @@
 ---
 
 /*tools*/
-{% include tools/normalize.css  %}
 {% include tools/fonts.css  %}
+{% include tools/normalize.css  %}
 
 /*productos page*/
 {% include css/header.css %}
