@@ -26,7 +26,7 @@
 </section>
 
 <section class="mapa">
-  <div class="mapa__lista">
+  <div class="mapa__markers">
     <ul>
       <li><a href="#">super mercado 1</a></li>
       <li><a href="#">super mercado 2</a></li>
@@ -34,10 +34,9 @@
       <li><a href="#">super mercado 4</a></li>
     </ul>
   </div>
-  <div class="mapa__gmaps">
-    <!-- {% include tools/maps.html %} -->
-
-    <!-- <img src="" alt="" width="300px" height="300px" /> -->
+  <div class="mapa__map" id="map">
+      <script src="https://maps.googleapis.com/maps/api/js?key= XXXXXXXXXX &callback=initMap" async defer>
+      </script>
   </div>
 </section>
 

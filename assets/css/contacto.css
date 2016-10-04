@@ -6,6 +6,7 @@
 {% include tools/normalize.css  %}
 
 /*productos page*/
+{% include css/maps.css %}
 {% include css/header.css %}
 {% include css/contacto-content.css %}
 {% include css/footer.css %}
