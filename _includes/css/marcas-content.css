@@ -15,9 +15,13 @@ section{
   max-width: 90vw;
 }
 .banner{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #003399;
   background-image: url("{{site.baseurl}}/assets/img/xlogo_cortado.png");
   background-position: center;
@@ -25,12 +29,19 @@ section{
   background-repeat: no-repeat;
 }
 .marcas__info{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .info__logo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .info__parrafo{
   margin-left: 40px
@@ -39,16 +50,28 @@ section{
   margin: 0 auto 50px auto;
 }
 .grid--flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 .productos{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -73,17 +96,11 @@ section{
   width: 95%;
   height: auto;
   overflow: hidden;
-  -webkit-transition: all .3s ease; /* Safari and Chrome */
-  -moz-transition: all .3s ease; /* Firefox */
-  -o-transition: all .3s ease; /* IE 9 */
-  -ms-transition: all .3s ease; /* Opera */
+  -webkit-transition: all .3s ease; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transition: all .3s ease;
 }
 .productos__items:hover img{
-  -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */
-  -moz-transform:scale(1.15); /* Firefox */
-  -ms-transform:scale(1.15); /* IE 9 */
-  -o-transform:translatZ(0) scale(1.15); /* Opera */
+  -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform:translatZ(0) scale(1.15);
 }
 
@@ -93,10 +110,12 @@ section{
   display:none;
   padding-top: 350px;
   position:fixed;
-  left:0;
-  top:0;
+  left:50%;
+  top:60%;
   width:100%;
   height:100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   overflow:auto;
   background-color:rgb(0,0,0);
   background-color:rgba(0,0,0,0.4)
@@ -118,8 +137,8 @@ section{
   to{-webkit-transform:scale(1)}
 }
 @keyframes animatezoom{
-  from{transform:scale(0)}
-  to{transform:scale(1)}
+  from{-webkit-transform:scale(0);transform:scale(0)}
+  to{-webkit-transform:scale(1);transform:scale(1)}
 }
 
 /*Modals Style*/
@@ -127,10 +146,16 @@ section{
   background-color: #003399;
 }
 .modals__body{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding:0.01em 16px
 }
 .modals__body__image{
