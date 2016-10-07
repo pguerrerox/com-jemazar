@@ -63,6 +63,11 @@ section{
   -ms-flex-line-pack: distribute;
       align-content: space-around;
 }
+.grid--row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .productos{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +92,7 @@ section{
 }
 .productos__items{
   width: 250px;
-  height: 250px;
+  /*height: 250px;*/
   border-bottom: 1px solid #003399;
 }
 .productos__items img{
