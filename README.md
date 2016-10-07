@@ -1,2 +1,2 @@
 # jemazar.com
-Desarrollo de la página [jemazar.com](jemazar.com) desarrollada con Jekyll.
+Desarrollo de la página [jemazar.com](http://jemazar.com) desarrollada con Jekyll.
