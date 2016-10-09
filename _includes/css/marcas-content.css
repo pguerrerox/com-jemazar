@@ -67,6 +67,7 @@ section{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
 }
 .productos{
   display: -webkit-box;
@@ -92,16 +93,20 @@ section{
 }
 .productos__items{
   width: 250px;
-  /*height: 250px;*/
+  height: 250px;      /* equals max image height */
+  text-align: center;
+  margin: 10px;
   border-bottom: 1px solid #003399;
 }
+.helper{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
 .productos__items img{
-  display: block;
-  margin:0 auto;
-  width: 95%;
-  height: auto;
-  overflow: hidden;
-  -webkit-transition: all .3s ease; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+  vertical-align: middle;
+  max-width: 90%;
+  max-height: 250px;
   transition: all .3s ease;
 }
 .productos__items:hover img{

@@ -10,8 +10,8 @@
   <div class="body__tab">
     <ul class="body__tablinks">
       <!-- <li><a href="#" class="tablinks__tab" onclick="productosJemazar(event, 'categorias')"><strong>Categorias</strong></a></li> -->
-      <li><a href="#!" class="tablinks__tab" onclick="productosJemazar(event, 'marcas')">Marcas</a></li>
-      <li><a href="#!" class="tablinks__tab" onclick="productosJemazar(event, 'productos')">Productos</a></li>
+      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="productosJemazar(event, 'marcas')">Marcas</a></li>
+      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="productosJemazar(event, 'productos')">Productos</a></li>
     </ul>
   </div>
 
@@ -33,45 +33,41 @@
   <div id="marcas" class="tablinks__grid">
     <h2>Marcas</h2>
     <div class="grid__marcas grid--flex">
-
       <!-- rottis -->
       <div class="marcas__content">
         <a href="{{site.baseurl}}/pages/marcas/rottis.html">
           <div class="marcas__item">
-            <img src="{{site.baseurl}}/assets/img/layer1.png" alt="" />
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/layer1.png" alt="" />
           </div>
         </a>
         <a href="{{site.baseurl}}/pages/marcas/rottis.html"><span>ver productos ></span></a>
       </div>
-
       <!-- baruk -->
       <div class="marcas__content">
         <a href="{{site.baseurl}}/pages/marcas/baruk.html">
           <div class="marcas__item">
-            <img src="{{site.baseurl}}/assets/img/layer2.png" alt="" />
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/layer2.png" alt="" />
           </div>
         </a>
         <a href="{{site.baseurl}}/pages/marcas/baruk.html"><span>ver productos ></span></a>
       </div>
-
       <!-- nauj -->
       <div class="marcas__content">
         <a href="{{site.baseurl}}/pages/marcas/nauj.html">
           <div class="marcas__item">
-            <img src="{{site.baseurl}}/assets/img/layer3.png" alt="" />
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/layer3.png" alt="" />
           </div>
         </a>
         <a href="{{site.baseurl}}/pages/marcas/baruk.html">ver productos ></a>
       </div>
-
       <!-- costero -->
       <div class="marcas__content">
-        <a href="#costero">
+        <a href="{{site.baseurl}}/pages/marcas/costero.html">
           <div class="marcas__item">
-            <img src="{{site.baseurl}}/assets/img/layer4.png" alt="" />
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/layer4.png" alt="" />
           </div>
         </a>
-        <a href="#costero"><span>ver productos ></span></a>
+        <a href="{{site.baseurl}}/pages/marcas/costero.html"><span>ver productos ></span></a>
       </div>
     </div>
   </div>
@@ -80,15 +76,107 @@
   <div id="productos" class="tablinks__grid">
     <h2>Productos</h2>
     <div class="grid__productos grid--flex">
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
-      <div class="productos__item"></div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('rottis01').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/01pshotrottis.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Tipo Holandes</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('rottis01').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('baruk01').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/02pshotbarukdanes.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Danés</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('baruk01').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('baruk02').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/03pshotbarukmozzarella.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Mozzarella</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('baruk02').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj01').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/04pshotnaujcheddar.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Danés</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj01').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj02').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/05pshotnaujquesohoja.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Mozzarella</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj02').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj03').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/06pshotnaujamarillofreir.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Mozzarella</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj03').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj04').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/07pshotnaujblancofreir.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Mozzarella</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('nauj04').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('costero01').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/08pshotcosteroholandes.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Tipo Holandes</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('costero01').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('costero02').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/09pshotcosteroamarillofreír.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Amarillo de Freír</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('costero02').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
+      <div class="productos">
+        <a href="javascript:void(0)" onclick="document.getElementById('costero03').style.display='block'">
+          <div class="productos__items">
+            <span class="helper"></span><img src="{{site.baseurl}}/assets/img/10pshotcosteroblancofreir.png" alt="" />
+          </div>
+        </a>
+        <span>Queso Blanco de Freír</span>
+        <a href="javascript:void(0)" onclick="document.getElementById('costero02').style.display='block'"><span>MÁS INFO ></span></a>
+      </div>
+
     </div>
   </div>
-
 </section>
