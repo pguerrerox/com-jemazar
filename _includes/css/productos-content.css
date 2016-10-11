@@ -160,7 +160,7 @@ ul.body__tablinks li a:focus, .active{
   height: 250px;      /* equals max image height */
   text-align: center;
   margin: 10px;
-  border-bottom: 1px solid #003399;
+  border: 1px solid #ccc;
 }
 .productos__items img{
   vertical-align: middle;

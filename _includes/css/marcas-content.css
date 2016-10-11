@@ -96,7 +96,7 @@ section{
   height: 250px;      /* equals max image height */
   text-align: center;
   margin: 10px;
-  border-bottom: 1px solid #003399;
+  border: 1px solid #ccc;
 }
 .helper{
   display: inline-block;
