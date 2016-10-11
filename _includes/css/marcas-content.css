@@ -6,7 +6,7 @@
 .padding--between{  padding: 0 20px;}
 .full--width{  max-width: 100vw;}
 .no--padding{  padding: 0;}
-.color--blanco{  color:#ffffff;}
+.color--blanco{  color:#ffffff; font-weight:bold;}
 .no--justify{  text-align: center;}
 
 section{
@@ -121,7 +121,7 @@ section{
   padding-top: 350px;
   position:fixed;
   left:50%;
-  top:60%;
+  top:35%;
   width:100%;
   height:100%;
   -webkit-transform: translate(-50%, -50%);
