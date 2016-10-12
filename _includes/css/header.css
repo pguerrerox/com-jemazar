@@ -16,12 +16,12 @@ header{
   align-items: center;
 }
 .header__logo img{
-  width: 200px;
+  max-width: 200px;
   height: auto;
 }
 .header__navbar{
   width: 100%;
-  padding: 0 30px;
+  padding: 0 2.5%;
 }
 .header__lang{
   width: 100%;
@@ -40,7 +40,7 @@ header{
 .header__lang a{
   text-decoration: none;
   text-transform: lowercase;
-  font-size: 17px;
+  font-size: 16px;
   color: #003399;
   font-family: HelveticaNeue;
   font-style: normal;
@@ -52,5 +52,5 @@ header{
 }
 .hr{
   border-left: thin solid #003399;
-  margin: 0 15px;
+  margin: 0 2%;
 }

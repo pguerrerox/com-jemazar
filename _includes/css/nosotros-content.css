@@ -28,16 +28,16 @@
   background-color: white;
 }
 .historia__empresa{
-  width: 90vw;
-  margin: auto;
-  padding:25px 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 .body__principios{
   width: 100%;
   background-color: white;
 }
 .principios__todos{
-  width: 90vw;
+  max-width: 1170px;
   margin: auto;
   /*padding:25px 0;*/
 }
@@ -50,7 +50,7 @@
   flex-wrap: wrap;
 }
 .lemas__vision, .lemas__mision, .lemas__valores {
-  width: 350px;
+  width: 300px;
   height: auto;
   margin: 15px 15px;
 }

@@ -117,8 +117,7 @@
 /*links de marcas*/
 .body__marcas{
   position: relative;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
   display: flex;
   flex-direction: column;
@@ -126,12 +125,12 @@
   align-items: center;
 }
 .marcas__moto{
-  width: 1170px;
-  padding:10px 0 20px 0;
+  max-width: 1170px;
+  padding:10px 0 10px 0;
   color: #003399;
 }
 .marcas__todas {
-  width: 1170px;
+  max-width: 1170px;
   padding:10px 0 30px 0;
   display: flex;
   flex-direction: row;
@@ -140,9 +139,9 @@
   align-items: baseline;
 }
 .marcas__rottis, .marcas__baruk, .marcas__nauj, .marcas__costero{
-  max-width: 400px;
+  max-width: 450px;
   width: auto;
-  margin:10px 20px;
+  margin:10px 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,12 +171,12 @@
 }
 .novedades__tittle{
   max-width: 1170px;
-  padding:20px 0;
+  padding:10px 0;
   color: #003399;
 }
 .novedades__banners{
   max-width: 1170px;
-  padding:30px 0;
+  padding:5px 0 25px 0;
   display: flex;
   justify-content: space-around;
 }
