@@ -8,4 +8,5 @@
 /*productos page*/
 {% include css/header.css %}
 {% include css/productos-content.css %}
+{% include css/modals.css %}
 {% include css/footer.css %}
