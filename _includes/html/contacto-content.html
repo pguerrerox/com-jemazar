@@ -4,7 +4,7 @@
   </div>
 </section>
 
-<section class="info">
+<!-- <section class="info">
   <div class="info__contacto padding--between">
     <p class="no--justify">Puedes contactarnos, <strong>via telefonica</strong> a cualquiera de los siguientes telefonos:</p>
     <h3>T: (809) 560-2220 <br>
@@ -23,9 +23,9 @@
     Instagram<br>
     LinkedIn</h3>
   </div>
-</section>
+</section> -->
 
-<section class="mapa">
+<!-- <section class="mapa">
   <div class="mapa__markers">
     <ul>
       <li><a href="#">super mercado 1</a></li>
@@ -38,20 +38,27 @@
       <script src="https://maps.googleapis.com/maps/api/js?key= XXXXXXXXXX &callback=initMap" async defer>
       </script>
   </div>
-</section>
+</section> -->
 
 <section class="forma">
-  <form class="contacto" action="index.html" method="post">
-    <fieldset title="Informacion de Contacto">
-      <input type="text" name="Nombre" placeholder="John" value="">
-      <input type="text" name="Apellido" placeholder="Smith" value="">
-      <input type="text" name="e-mail" placeholder="johnsmith@gmail.com" value="">
-    </fieldset>
-
-    <fieldset title="Mensaje">
-      <input type="text" name="Asunto" placeholder="" value="">
-      <input type="text" name="Contenido" placeholder="" value="">
-    </fieldset>
-  </form>
+  <hr>
+  <h2 class="sin--transform align--left">¿En qué podemos ayudarle?</h2>
+  <p>
+    En Jemazar estamos para servirle. Utilice el siguiente formulario, para ponerse en contacto con nuestro equipo de servicio,
+    una vez recibido su mensaje le estaremos contactando para ofrecerle respuesta a su solicitud, inquietud o pregunta.
+  </p>
+  <div class="forma__campos">
+    <form class="form__contacto" action="index.html" method="post">
+      <span>Nombre*</span><br>
+      <input type="text" name="nombre" placeholder="John" value="" required="true"><br>
+      <!-- <span>Apellido: *</span><input type="text" name="Apellido" placeholder="Smith" value="" required="true"> -->
+      <span>Correo Electrónico*</span><br>
+      <input type="text" name="e-mail" placeholder="johnsmith@gmail.com" value=""><br>
+      <span>Asunto</span><br>
+      <input type="text" name="asunto" placeholder="Queridos Jemazar" value="" required="true"><br>
+      <span>Mensaje*</span><br>
+      <input type="text" name="contenido" placeholder="Quisiera saber ..." value=""><br>
+    </form>
+</div>
 
 </section>
