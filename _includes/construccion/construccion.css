@@ -1,0 +1,61 @@
+html{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background-image: url("{{site.baseurl}}/assets/img/construccion/fondoquesos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  text-shadow: 1px 2px black;
+  font-weight: bolder;
+  text-align: center;
+  color: #003399;
+}
+img{
+  padding: 40px;
+  width: 35%;
+  border-bottom: 2px solid #003399;
+}
+p{
+  text-align: center;
+  font-weight: lighter;
+  position: fixed;
+  bottom: 10px;
+  font-size: 10px;
+  color: black;
+}
+a{
+  text-decoration: none;
+  color: #05abde;
+}
+.construccion{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:  0 auto;
+}
+@media only screen and (max-width: 780px){
+  img{
+    padding: 20px;
+    width:40%;
+  }
+}
+@media only screen and (max-width: 320px){
+  img{
+    padding: 20px;
+    width:60%;
+  }
+}
