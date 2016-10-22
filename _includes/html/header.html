@@ -19,6 +19,7 @@
       <a href="{{site.baseurl}}/pages/productos.html">Productos</a>
       <span class="hr"></span>
       <a href="{{site.baseurl}}/pages/contacto.html">Contacto</a>
+      <a href="javascript:void(0);" onclick="openNav()">&#9776;</a>
     </nav>
 
     <!-- language selector -->
@@ -27,6 +28,29 @@
       <!-- <span class="hr"></span> -->
       <!-- <a href="index.html">Español</a> -->
     </div>
-
   </div>
+
+  <!-- MOBILE OVERLAY -->
+  <div id="myNav" class="overlay" onclick="closeNav()">
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="{{site.baseurl}}/index.html">Inicio</a>
+      <a href="{{site.baseurl}}/pages/nosotros.html">Nosotros</a>
+      <a href="{{site.baseurl}}/pages/productos.html">Productos</a>
+      <a href="{{site.baseurl}}/pages/contacto.html">Contacto</a>
+    </div>
+    <span>PRESIONA EN CUALQUIER PARTE PARA SALIR</span>
+  </div>
+
+  <script>
+  /* Open when someone clicks on the span element */
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+
 </header>

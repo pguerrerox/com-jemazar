@@ -23,11 +23,6 @@ header{
   width: 100%;
   padding: 0 2.5%;
 }
-.header__lang{
-  width: 100%;
-  flex-shrink: 3;
-  text-align: right;
-}
 .header__navbar a{
   text-decoration: none;
   text-transform: uppercase;
@@ -37,7 +32,16 @@ header{
   font-style: normal;
   font-weight: bold;
 }
-.header__lang a{
+.header__navbar a:last-child{
+  display: none;
+}
+.header__lang{
+  /*width: 100%;
+  flex-shrink: 3;
+  text-align: right;*/
+  display: none;
+}
+/*.header__lang a{
   text-decoration: none;
   text-transform: lowercase;
   font-size: 16px;
@@ -45,7 +49,7 @@ header{
   font-family: HelveticaNeue;
   font-style: normal;
   font-weight: 200;
-}
+}*/
 .header__navbar a:hover{
   text-decoration: underline;
   color: #001233;
@@ -53,4 +57,78 @@ header{
 .hr{
   border-left: thin solid #003399;
   margin: 0 2%;
+}
+.overlay{
+  display: none;
+}
+
+/*Mobile overlay*/
+@media screen and (max-width:800px) {
+  .header__logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+    .header__navbar{
+    width: auto;
+  }
+  .header__navbar a:not(:last-child), .hr{
+    display: none;
+  }
+  .overlay{
+    display: inherit;
+  }
+    .header__navbar a:last-child{
+    display: inherit;
+  }
+  .header__navbar a{
+    font-size: 25px;
+    text-decoration: none;
+    float: right;
+  }
+  .header__navbar a:hover{
+    background-color: #b5bde4;
+    text-decoration: none;
+  }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: #ffffff; /* Black fallback color */
+    background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    /*margin-top: 25px;*/
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-weight: bold;
+    color: #003399;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #001233;
+  }
+  .overlay span{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    padding: 10px;
+  }
 }
