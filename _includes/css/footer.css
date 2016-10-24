@@ -41,3 +41,17 @@ svg{
 svg:hover{
   fill:black;
 }
+
+
+@media screen and (max-width:800px) {
+  .footer__content{
+    flex-flow: column;
+    justify-content: center;
+  }
+  .footer__copyright p{
+    text-align: center;
+  }
+
+
+
+}

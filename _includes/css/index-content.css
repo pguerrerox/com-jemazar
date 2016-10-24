@@ -53,7 +53,6 @@
 .slideshow__slides img{
   width: 100%;
   max-height: 400px;
-  min-height: 175px;
 }
 .selectors:hover{
   background-color: rgb(31, 31, 31);
@@ -209,7 +208,12 @@
 
 /*MOBILE STYLE*/
 @media screen and (max-width:800px) {
-
-
+  .indicators{display: none;}
+  .slideshow__selectors{display: none;}
+  .links__nuestros{    flex-flow: column;    justify-content: center;    align-items: center;    margin: 3vh auto;  }
+  .nuestra__empresa figcaption, .nuestros__productos figcaption{    font-size: 17px;  }
+  .nota{    padding: 11px;  }
+  .novedades__banners{    flex-flow: column;    justify-content: center;    align-items: center;  }
+  .banners__1, .banners__2, .banners__3{    margin: 10px;  }
 }
 /***************************************/

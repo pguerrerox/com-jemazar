@@ -69,3 +69,9 @@ p, li{
   font-size: 17px;
   text-align: justify;
 }
+
+@media screen and (max-width:800px) {
+  h1{font-size: 28px;}
+  h2{font-size: 23px;}
+  h3{font-size: 16px;}
+  }
