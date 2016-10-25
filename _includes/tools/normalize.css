@@ -75,3 +75,15 @@ p, li{
   h2{font-size: 23px;}
   h3{font-size: 16px;}
   }
+
+@media screen and (max-width:800px) {
+  h1{font-size: 23px;}
+  h2{font-size: 20px;}
+  h3{font-size: 13px;}
+  }
+
+@media screen and (max-width:500px) {
+  p, li{
+    font-size: 15px;
+  }
+}

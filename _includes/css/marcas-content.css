@@ -121,3 +121,25 @@ section{
   -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform:translatZ(0) scale(1.15);
 }
+
+
+@media screen and (max-width:550px) {
+  .info__logo{
+    justify-content: center;
+  }
+  .info__logo img{
+    margin: 0 auto;
+    width: 250px;
+  }
+  .info__parrafo{
+    text-align: center;
+    margin: auto;
+  }
+  .marcas__info{
+    flex-flow: column;
+  }
+  .grid--row{
+     flex-flow:column;
+     align-items: center;
+  }
+}

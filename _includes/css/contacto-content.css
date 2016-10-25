@@ -23,15 +23,19 @@ section{
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  width: auto;
 }
 .info__contacto{
   width: 325px;
 }
 .info__contacto a{
   text-decoration: none;
-  transition: 0.5s;
+  font-size: 18px;
+  color: inherit;
+  font-family: HelveticaNeue;
+  font-style: normal;
 }
-.info__contacto a:hover, h3:hover{
+.info__contacto a:hover, a:focus, h3:hover{
   color: #003399;
   font-weight: bold;
 }
@@ -89,6 +93,7 @@ hr {
   margin: 20px auto 20px auto;
 }
 
+
 /*GENERICOS*/
 .sin--transform{  text-transform: none;}
 .align--right{  text-align: right;}
@@ -102,3 +107,12 @@ hr {
 .no--justify{  text-align: center;}
 .text--strong{  font-weight: bold;}
 .no--margin{margin: 0;}
+
+
+
+@media screen and (max-width:550px){
+  .info__contacto{
+    padding: 5px;
+    width: 100%;
+  }
+}

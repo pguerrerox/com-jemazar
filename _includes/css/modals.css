@@ -82,3 +82,24 @@
   outline:0;
   width:350px
 }
+
+@media screen and (max-width:550px) {
+  /*.w3-modal{  }*/
+  .w3-modal-content{
+    width: 90vw;
+  }
+  .modals__body{
+    flex-flow: column;
+    font-size: 14px ;
+  }
+  .modals__body__info{
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+}
