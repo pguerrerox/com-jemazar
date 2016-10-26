@@ -21,7 +21,7 @@
   position:relative;
   padding:0;
   outline:0;
-  width:650px
+  width:700px
 }
 .w3-animate-zoom {
   -webkit-animation:animatezoom 0.6s;
@@ -53,15 +53,9 @@
           align-items: center;
   padding:0.01em 16px
 }
-.modals__body__image{
-    width: 200px;
-    height: 200px;
-}
-.modals__body img{
-  display: block;
-  margin:auto;
-  width: 95%;
-  height: auto;
+.modals__body__image img{
+    width: 300px;
+    height: auto;
 }
 .modals__body__info{
   padding: 25px;
@@ -72,34 +66,60 @@
 }
 
 /*datos nutricionales*/
-.datosnuts img{
-  height: 60vh;
-}
 .w3-modal-content2{
-  margin: auto;
   position:relative;
+  margin: 0 auto;
   padding:0;
   outline:0;
-  width:350px
+  width:75%;
+}
+.datosnuts{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.datosnuts img{
+  margin: 0 auto;
+
+  height: 75vh;
 }
 
 @media screen and (max-width:550px) {
+  .w3-modal{
+    padding-top: 250px;
+    position:fixed;
+    left:50%;
+    top:35%;
+  }
   /*.w3-modal{  }*/
   .w3-modal-content{
     width: 90vw;
   }
   .modals__body{
-    flex-flow: column;
+    -ms-flex-flow: column;
+        flex-flow: column;
     font-size: 14px ;
   }
   .modals__body__info{
     padding: 10px;
   }
+  .modals__body__image img{
+      width: 200px;
+      height: auto;
+  }
 
-
-
-
-
-
-
+  /*datos nutricionales MOBILE*/
+  .w3-modal-content2{
+    width:100%;
+    margin: 10% auto;
+  }
+  .datosnuts{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .datosnuts img{
+    margin: 0 auto;
+    width: 75vw;
+  }
 }

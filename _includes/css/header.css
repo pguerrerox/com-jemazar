@@ -10,10 +10,19 @@ header{
 .header__content{
   max-width: 1170px;
   margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__logo img{
   max-width: 200px;
@@ -66,14 +75,22 @@ header{
 @media screen and (max-width:800px) {
   .header__logo{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header__navbar{
     position: absolute;
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .header__navbar a:not(:last-child), .hr{
     display: none;
@@ -101,6 +118,7 @@ header{
     background-color: #ffffff; /* Black fallback color */
     background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
     overflow-x: hidden;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .overlay-content {
@@ -119,6 +137,7 @@ header{
     font-weight: bold;
     color: #003399;
     display: block; /* Display block instead of inline */
+    -webkit-transition: 0.3s;
     transition: 0.3s; /* Transition effects on hover (color) */
   }
   .overlay a:hover, .overlay a:focus {

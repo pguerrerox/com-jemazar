@@ -5,9 +5,16 @@
   width: 100%;
   height: auto;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content:center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
   z-index: 1090;
 }
 .body__banner h1{
@@ -54,6 +61,7 @@ ul.body__tablinks li a{
   padding: 5px 15px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 ul.body__tablinks li a:hover{
@@ -68,18 +76,30 @@ ul.body__tablinks li a:focus, .active{
   display: none;
   max-width: 1170px;
   margin: 0 auto 50px auto;
-  animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
 }
 @keyframes fadeEffect {
   from {opacity: 0.3;}
   to {opacity: 1;}
 }
 .grid--flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: baseline;
-  align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 /*.categorias__item{
   display: block;
@@ -95,8 +115,13 @@ ul.body__tablinks li a:focus, .active{
 
 /*CSS marcas*/
 .marcas__content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -126,6 +151,7 @@ ul.body__tablinks li a:focus, .active{
   vertical-align: middle;
   max-width: 90%;
   max-height: 250px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .baruk__logo img{
@@ -133,17 +159,19 @@ ul.body__tablinks li a:focus, .active{
   max-height: 200px;
 }
 .marcas__item:hover img{
-  -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */
-  -moz-transform:scale(1.15); /* Firefox */
-  -ms-transform:scale(1.15); /* IE 9 */
-  -o-transform:translatZ(0) scale(1.15); /* Opera */
+  -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform:translatZ(0) scale(1.15);
 }
 
 /*CSS Productos*/
 .productos{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 10px;
   width: 250px;
   /*height: 250px;*/
@@ -171,6 +199,7 @@ ul.body__tablinks li a:focus, .active{
   vertical-align: middle;
   max-width: 90%;
   max-height: 250px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .productos__items:hover img{

@@ -9,9 +9,15 @@ footer{
 .footer__content{
   width: 90vw;
   margin: auto ;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__copyright p{
   color: white;
@@ -29,8 +35,13 @@ footer{
   text-shadow:2px 2px 0 rgb(0, 255, 0);
 }
 .footer__redes{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 svg{
   width: 36px;
@@ -45,8 +56,11 @@ svg:hover{
 
 @media screen and (max-width:800px) {
   .footer__content{
-    flex-flow: column;
-    justify-content: center;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__copyright p{
     text-align: center;

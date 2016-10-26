@@ -46,7 +46,9 @@ section{
 }
 .info__parrafo{
   margin-left: 40px;
- align-self: center;
+ -ms-flex-item-align: center;
+     -ms-grid-row-align: center;
+     align-self: center;
 }
 .info__logo img{
   width: 250px;
@@ -72,10 +74,18 @@ section{
       align-content: space-around;
 }
 .grid--row{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .productos{
   display: -webkit-box;
@@ -115,6 +125,7 @@ section{
   vertical-align: middle;
   max-width: 90%;
   max-height: 250px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .productos__items:hover img{
@@ -125,7 +136,9 @@ section{
 
 @media screen and (max-width:550px) {
   .info__logo{
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .info__logo img{
     margin: 0 auto;
@@ -136,10 +149,14 @@ section{
     margin: auto;
   }
   .marcas__info{
-    flex-flow: column;
+    -ms-flex-flow: column;
+        flex-flow: column;
   }
   .grid--row{
-     flex-flow:column;
-     align-items: center;
+     -ms-flex-flow:column;
+         flex-flow:column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
   }
 }
