@@ -8,9 +8,9 @@
   <h2 class="sin--transform align--left no--margin--top">Puedes contactarnos,</h2>
   <div class="info__informacion">
     <div class="info__contacto padding--between">
-      <p class="no--justify"><strong>Vía telefónica</strong> a cualquiera de los siguientes telefonos:</p>
-      <h3 class="no--margin">T: (809) 560-2220 <br></h3>
-      <h3 class="no--margin">T: (829) 222-1230</h3></h3>
+      <p class="no--justify"><strong>Vía telefónica</strong> al siguiente número:</p>
+      <h3 class="no--margin">T: (809) 583-5424 <br></h3>
+      <!-- <h3 class="no--margin">T: (829) 222-1230</h3></h3> -->
     </div>
     <div class="info__contacto padding--between">
       <p class="no--justify">En nuestras <strong>redes sociales</strong>:</p>
@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<hr class="full--width">
+<hr>
 
 <section class="mapa">
   <div class="mapa__info">
@@ -41,7 +41,7 @@
   </div>
 </section>
 
-<hr class="full--width">
+<hr>
 
 <section class="forma">
   <div class="forma__info">
@@ -52,26 +52,37 @@
     </p>
   </div>
   <div class="forma__campos">
-    <form class="form__contacto" action="index.html" method="post">
+    <form class="form__contacto" id="form__contacto" action="https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
       <label for="nombre">Nombre*</label>
       <span class="form--control">
-        <input id="nombre" type="text" name="nombre" placeholder="Jose Perez" required="true">
+        <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Perez" required="true">
       </span>
       <label for="e-mail">Correo Electrónico*</label>
       <span class="form--control">
-        <input id="e-mail" type="email" name="e-mail" placeholder="joseperez@gmail.com" required="true">
+        <input name="entry.1342992053" id="entry.1342992053" type="email" placeholder="joseperez@gmail.com" required="true">
       </span>
       <label for="asunto">Aunto*</label>
       <span class="form--control">
-        <input id="asunto"type="text" name="asunto" placeholder="Hola Jemazar" required="true">
+        <input name="entry.1914372494" id="entry.1914372494"type="text" placeholder="Hola Jemazar" required="true">
       </span>
       <label for="mensaje">Mensaje</label><br>
       <span class="form--control">
-        <textarea id="mensaje" name="mensaje" rows="8" cols="40" placeholder="Me gustaria...."></textarea>
+        <textarea name="entry.1106944345" id="entry.1106944345" rows="8" cols="40" placeholder="Me gustaria...."></textarea>
       </span>
       <span class="buttom">
-        <input type="button" name="enviar" value="ENVIAR">
+        <input type="submit" name="enviar" value="ENVIAR">
       </span>
     </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
   </div>
 </section>
+
+<!-- https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse -->
+<!--
+nombre  = entry.1561595182
+email   = entry.1342992053
+asunto  = entry.1914372494
+mensaje = entry.1106944345
+-->
