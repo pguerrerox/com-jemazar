@@ -7,15 +7,17 @@
       <span class="indicators" onclick="currentSlide(1)"></span>
       <span class="indicators" onclick="currentSlide(2)"></span>
       <span class="indicators" onclick="currentSlide(3)"></span>
+      <span class="indicators" onclick="currentSlide(4)"></span>
     </div>
     <div class="slideshow__selectors">
       <span class="selectors left" onclick="plusSlides(-1)">&#10094;</span>
       <span class="selectors right" onclick="plusSlides(+1)">&#10095;</span>
     </div>
     <div class="slideshow__slides">
-      <img class="myslides" src="assets/img/slides/slide1.jpg">
-      <img class="myslides" src="assets/img/slides/slide2.jpg">
-      <img class="myslides" src="assets/img/slides/slide3.jpg">
+      <img class="myslides" src="{{site.baseurl}}/assets/img/slides/slide1.jpg">
+      <img class="myslides" src="{{site.baseurl}}/assets/img/slides/slide2.jpg">
+      <img class="myslides" src="{{site.baseurl}}/assets/img/slides/slide3.jpg">
+      <img class="myslides" src="{{site.baseurl}}/assets/img/slides/slide4.jpg">
     </div>
   </div>
 
@@ -26,7 +28,7 @@
     <div class="body__links">
       <div class="links__nuestros">
         <div class="nuestra__empresa">
-          <img src="assets/img/nuestraempresa.png" alt="" />
+          <img src="assets/img/nuestraempresa.jpg" alt="" />
           <a href="{{site.baseurl}}/pages/nosotros.html#historia">
             <figcaption>Nuestra Empresa
               <p class="nota">Somos una empresa 100% dominicana, con base en Santiago y dedicados a...<br><strong>Leer mas ></strong></p>
@@ -35,7 +37,7 @@
         </div>
 
         <div class="nuestros__productos">
-          <img src="assets/img/nuestroproductos.png" alt="" />
+          <img src="assets/img/nuestroproductos.jpg" alt="" />
           <a href="{{site.baseurl}}/pages/productos.html">
             <figcaption>Nuestros Productos
               <p class="nota">Distribuimos una gran variedad de productos alimenticios, todos de alta calidad...<br><strong>Ver mas ></strong></p>
@@ -103,7 +105,25 @@
       </div>
     </div>
 
-    <!-- seccion de novedades -->
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        get: 'user',
+        userId: '​​145268995',
+        accessToken: '​145268995.1677ed0.f6dde1d4e9eb421abb45f1af76b5976d',
+      });
+      feed.run();
+    </script>
+
+    <div class="instafeed" id="instafeed">   </div>
+
+<!-- jemazar -->
+<!-- 2290609227.1677ed0.268c649c5bc540fdab0b0e31c31694fe -->
+
+<!-- test -->
+<!-- 145268995.1677ed0.f6dde1d4e9eb421abb45f1af76b5976d -->
+
+
+<!-- seccion de novedades -->
     <div class="body__novedades">
       <div class="novedades__tittle">
         <h1>Novedades</h1>

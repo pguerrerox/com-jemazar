@@ -1,5 +1,7 @@
 /*CSS para el <section> productos__content*/
 
+.strong--big{font-weight: normal; font-size: 18px;}
+
 .productos__content{
   position: relative;
   width: 100%;
@@ -17,10 +19,10 @@
           justify-content:center;
   z-index: 1090;
 }
-.body__banner h1{
+/*.body__banner h1{
   color:#ffffff;
-}
-.body__banner{
+}*/
+/*.body__banner{
   position: relative;
   width: 100%;
   background-color: #003399;
@@ -28,7 +30,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
+}*/
 .body__tab{
   margin: 35px 0;
   border-bottom: 1px solid #ccc;

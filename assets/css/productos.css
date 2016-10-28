@@ -4,6 +4,7 @@
 /*tools*/
 {% include tools/fonts.css  %}
 {% include tools/normalize.css  %}
+{% include tools/buttons.css %}
 
 /*productos page*/
 {% include css/header.css %}

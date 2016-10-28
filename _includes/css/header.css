@@ -9,7 +9,7 @@ header{
 }
 .header__content{
   max-width: 1170px;
-  margin: 0 15px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

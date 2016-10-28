@@ -20,18 +20,9 @@
           align-items: center;
   z-index: 1090;
 }
-.body__banner h1{
-  color:#ffffff;
-}
-.body__banner{
-  position: relative;
-  width: 100%;
+/*.body__banner{
   background-color: #003399;
-  background-image: url("{{site.baseurl}}/assets/img/xlogo_cortado.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+}*/
 .body__historia{
   width: 100%;
   background-color: white;

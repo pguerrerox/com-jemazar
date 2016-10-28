@@ -54,7 +54,7 @@ section{
 .mapa__map{
   display: inline-block;
   overflow: hidden;
-  border: 2px solid #003399;
+  border: 1px solid #003399;
 }
 .mapa__map iframe{
   position: relative;
