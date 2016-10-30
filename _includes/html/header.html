@@ -6,19 +6,20 @@
     <!-- logo -->
     <div class="header__logo">
       <a href="{{site.baseurl}}/index.html">
-        <img src="{{site.baseurl}}/assets/img/xlogo.png" alt="" />
+        {% include /icons/logo.html %}
+        <!-- <img src="{{site.baseurl}}/assets/img/xlogo.png" alt="" /> -->
       </a>
     </div>
 
     <!-- navbar -->
     <nav class="header__navbar">
-      <a href="{{site.baseurl}}/index.html">Inicio</a>
+      <a href="{{site.baseurl}}/index.html" id="nav__inicio">Inicio</a>
       <span class="hr"></span>
-      <a href="{{site.baseurl}}/pages/nosotros.html">Nosotros</a>
+      <a href="{{site.baseurl}}/pages/nosotros.html" id="nav__nosotros">Nosotros</a>
       <span class="hr"></span>
-      <a href="{{site.baseurl}}/pages/productos.html">Productos</a>
+      <a href="{{site.baseurl}}/pages/productos.html" id="nav__productos">Productos</a>
       <span class="hr"></span>
-      <a href="{{site.baseurl}}/pages/contacto.html">Contacto</a>
+      <a href="{{site.baseurl}}/pages/contacto.html" id="nav__contacto">Contacto</a>
       <a href="javascript:void(0);" onclick="openNav()">&#9776;</a>
     </nav>
 

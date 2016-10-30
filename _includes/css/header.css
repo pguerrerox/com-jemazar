@@ -8,8 +8,9 @@ header{
   z-index: 1110;
 }
 .header__content{
-  max-width: 1170px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,8 +25,8 @@ header{
       -ms-flex-align: center;
           align-items: center;
 }
-.header__logo img{
-  max-width: 200px;
+svg.header__logo{
+  width: 200px;
   height: auto;
 }
 .header__navbar{
@@ -37,6 +38,8 @@ header{
   text-transform: uppercase;
   font-size: 18px;
   color: #003399;
+  padding: 5px;
+  border-radius: 5px;
   font-family: HelveticaNeue;
   font-style: normal;
   font-weight: bold;
@@ -60,16 +63,36 @@ header{
   font-weight: 200;
 }*/
 .header__navbar a:hover{
-  text-decoration: underline;
   color: #001233;
+  text-decoration: none;
+}
+.header__navbar a:active{
+  color:white;
+  background-color: #003399;
+  text-decoration: none;
+}
+body#nav__inicio a#nav__inicio,
+body#nav__nosotros a#nav__nosotros,
+body#nav__productos a#nav__productos,
+body#nav__contacto a#nav__contacto{
+  color: #ffffff;
+  background-color: #003399;
 }
 .hr{
-  border-left: thin solid #003399;
-  margin: 0 2%;
+  border-left: 2px solid #003399;
+  padding: 7px 0;
+  margin: 0 1.5%;
 }
 .overlay{
   display: none;
 }
+
+
+
+
+
+
+
 
 /*Mobile overlay*/
 @media screen and (max-width:800px) {

@@ -7,8 +7,9 @@ footer{
   z-index: 1060;
 }
 .footer__content{
-  max-width: 1170px;
+  max-width: 1300px;
   margin: 0 auto ;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,13 +44,13 @@ footer{
       -ms-flex-direction: row;
           flex-direction: row;
 }
-svg{
+svg.footer__icons{
   width: 36px;
   height: auto;
   padding-left: 10px;
   fill:white;
 }
-svg:hover{
+svg.footer__icons:hover{
   fill:black;
 }
 

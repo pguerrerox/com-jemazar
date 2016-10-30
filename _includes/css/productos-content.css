@@ -1,7 +1,5 @@
 /*CSS para el <section> productos__content*/
 
-.strong--big{font-weight: normal; font-size: 18px;}
-
 .productos__content{
   position: relative;
   width: 100%;
@@ -19,27 +17,14 @@
           justify-content:center;
   z-index: 1090;
 }
-/*.body__banner h1{
-  color:#ffffff;
-}*/
-/*.body__banner{
-  position: relative;
-  width: 100%;
-  background-color: #003399;
-  background-image: url("{{site.baseurl}}/assets/img/xlogo_cortado.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}*/
 .body__tab{
-  margin: 35px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #003399;
 }
 ul.body__tablinks{
   list-style-type: none;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0;
+  max-width: 1300px;
+  margin: 60px auto 0 auto;
+  padding: 0 10px;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -47,16 +32,16 @@ ul.body__tablinks li{
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   float: left;
   margin-right: 1px;
 }
 ul.body__tablinks li a{
   display: inline-block;
   color: #ccc;
-  border-top-right-radius: 14px;
-  border-top-left-radius: 14px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
@@ -71,15 +56,16 @@ ul.body__tablinks li a:hover{
   color: #fff;
 }
 ul.body__tablinks li a:focus, .active{
-  background-color: #003399;
   color: #ffffff;
+  background-color: #003399;
 }
 .tablinks__grid{
   display: none;
-  max-width: 1170px;
-  margin: 0 auto 50px auto;
-  -webkit-animation: fadeEffect 1s;
-          animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  /*max-width: 1300px;*/
+  /*margin: 0 auto 60px auto;*/
+  /*padding: 0 10px;*/
+  /*-webkit-animation: fadeEffect 1s;*/
 }
 @-webkit-keyframes fadeEffect {
   from {opacity: 0.3;}
@@ -90,18 +76,15 @@ ul.body__tablinks li a:focus, .active{
   to {opacity: 1;}
 }
 .grid--flex{
-  display: -webkit-box;
-  display: -ms-flexbox;
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: 60px auto;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 /*.categorias__item{
   display: block;
@@ -117,13 +100,8 @@ ul.body__tablinks li a:focus, .active{
 
 /*CSS marcas*/
 .marcas__content{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -138,11 +116,11 @@ ul.body__tablinks li a:focus, .active{
   color: #001233;
 }
 .marcas__item{
-  width: 250px;
-  height: 250px;      /* equals max image height */
+  width: 285px;
+  height: 285px;
   border: 1px solid #ccc;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 .helper{
   display: inline-block;
@@ -152,8 +130,7 @@ ul.body__tablinks li a:focus, .active{
 .marcas__item img{
   vertical-align: middle;
   max-width: 90%;
-  max-height: 250px;
-  -webkit-transition: all .3s ease;
+  max-height: 285px;
   transition: all .3s ease;
 }
 .baruk__logo img{
@@ -167,51 +144,35 @@ ul.body__tablinks li a:focus, .active{
 
 /*CSS Productos*/
 .productos{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 10px;
-  width: 250px;
-  /*height: 250px;*/
-  /*text-transform: uppercase;*/
+  flex-direction: column;
   text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
-}
-.productos a{
   font-weight: bold;
-  text-decoration: none;
-  color: #003399;
-}
-.productos a:hover{
-  text-decoration: underline;
-  color: #001233;
+  margin: 0 5px 25px 5px;
 }
 .productos__items{
-  width: 250px;
-  height: 250px;      /* equals max image height */
-  text-align: center;
+  width: 285px;
+  height: 285px;
   margin: 10px;
+  text-align: center;
   border: 1px solid #ccc;
 }
 .productos__items img{
   vertical-align: middle;
-  max-width: 90%;
-  max-height: 250px;
-  -webkit-transition: all .3s ease;
+  max-width: 95%;
+  max-height: 285px;
   transition: all .3s ease;
 }
 .productos__items:hover img{
   -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform:translatZ(0) scale(1.15);
 }
+.strong--big{font-weight: normal; font-size: 18px;}
 
 /*Modals*/
 .color--blanco{  color:#ffffff; font-weight:bold;}
-
 .w3-modal{
   z-index:11100;
   display:none;
