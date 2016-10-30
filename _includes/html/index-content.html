@@ -110,18 +110,25 @@
         get: 'user',
         userId: '2290609227',
         accessToken: '2290609227.1677ed0.268c649c5bc540fdab0b0e31c31694fe',
+        limit:'8',
+        resolution:'standard_resolution',
+        {% raw %}
+        template: '<div class="instagram__pics">  <a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" />    <div class="info__feed">      <div class="feed__likes"><i class="material-icons">&#xE87D;</i><span>{{likes}}</span></div>      <div class="feed__comments"><i class="material-icons">&#xE0B9;</i><span>{{comments}}</span></div>    </div>  </a> </div>',
+        {% endraw%}
       });
       feed.run();
     </script>
 
-    <div class="instafeed" id="instafeed">   </div>
-
-<!-- jemazar -->
-<!-- 2290609227.1677ed0.268c649c5bc540fdab0b0e31c31694fe -->
-
-<!-- test -->
-<!-- 145268995.1677ed0.f6dde1d4e9eb421abb45f1af76b5976d -->
-
+<!--
+div .instagram__pics
+  <a >
+    <img/>
+    <div .info__feed
+      <div .feed__likes i .material-icons
+      <div .feed__comments i .material-icons
+ -->
+<!-- jemazar -->  <!-- 2290609227.1677ed0.268c649c5bc540fdab0b0e31c31694fe -->
+<!-- test -->     <!-- 145268995.1677ed0.f6dde1d4e9eb421abb45f1af76b5976d -->
 
 <!-- seccion de novedades -->
     <div class="body__novedades">
@@ -129,15 +136,7 @@
         <h1>Novedades</h1>
       </div>
       <div class="novedades__banners">
-        <div class="banners__1 banner--size">
-          <img src="assets/img/novedades1.png" alt="" />
-        </div>
-        <div class="banners__2 banner--size">
-          <img src="assets/img/novedades2.png" alt="" />
-        </div>
-        <div class="banners__3 banner--size">
-          <img src="assets/img/novedades3.png" alt="" />
-        </div>
+        <div class="instafeed" id="instafeed">   </div>
       </div>
     </div>
   </div>

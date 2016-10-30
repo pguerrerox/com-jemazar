@@ -102,8 +102,9 @@
   z-index: 1080;
 }
 .links__nuestros{
-  max-width: 1170px;
-  margin: 6vh auto;
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +121,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 450px;
+  max-width: 525px;
   width: auto;
   margin: 10px 25px;
 }
@@ -153,7 +154,6 @@
   padding: 15px;
   text-transform: none;
 }
-
 /***************************************/
 
 /*links de marcas*/
@@ -176,13 +176,13 @@
           align-items: center;
 }
 .marcas__moto{
-  max-width: 1170px;
-  padding:10px 0 10px 0;
+  max-width: 1300px;
+  padding: 30px 10px;
   color: #003399;
 }
 .marcas__todas {
-  max-width: 1170px;
-  padding:10px 0 30px 0;
+  max-width: 1300px;
+  padding: 30px 10px 60px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,9 +199,9 @@
           align-items: baseline;
 }
 .marcas__rottis, .marcas__baruk, .marcas__nauj, .marcas__costero{
-  max-width: 450px;
+  max-width: 285px;
   width: auto;
-  margin:10px 25px;
+  margin:5px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,37 +246,67 @@
           align-items: center;
 }
 .novedades__tittle{
-  max-width: 1170px;
-  padding:10px 0;
+  max-width: 1300px;
+  padding: 30px 10px;
   color: #003399;
 }
 .novedades__banners{
-  max-width: 1170px;
-  padding:5px 0 25px 0;
+  max-width: 1300px;
+  padding:0 10px 30px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.banners__1, .banners__2, .banners__3{
+.instafeed{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.instagram__pics{
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 10px 20px;
+  /*overflow: hidden;*/
 }
-.banner--size img{
-  max-width: 85%;
-  height: auto;
+.instagram__pics a{
+  text-decoration: none;
+  color:inherit;
 }
-/***************************************/
+.instagram__pics a img{
+  max-width: 285px;
+  max-height: 285px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+.info__feed{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  color: #003399;
+  background-color: black;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: height 0.5s;
+  overflow: hidden;
+}
+.instagram__pics:hover .info__feed{
+  height: 100%;
+}
+.feed__likes, .feed__comments{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 3px;
+}
+.feed__likes span, .feed__comments span{
+  padding: 0 3px;
+}
 
 
 /*MOBILE STYLE*/
