@@ -32,11 +32,12 @@
     <p>
       El mapa siguiente muestra la ubicacion de nuestras oficinas y tambien los comercios donde puedes encontrar nuestros productos.
     </p>
-</div>
-  <div class="mapa__map" id="map">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12g7jk5kI3SXClnvpk2oOXxvDYpI" ></iframe>
-      <!-- <script src="https://maps.googleapis.com/maps/api/js?key= XXXXXXXXXX &callback=initMap" async defer>
-      </script> -->
+  </div>
+
+  <div class="mapa__map">
+    <div class="mapa_canvas" id="map_canvas">  </div>
+
+    <div class="mapa__sidebar" id="side_bar">  </div>
   </div>
 </section>
 
@@ -73,15 +74,47 @@
       </span>
     </form>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
 
+
+    <!-- https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse -->
+    <!--
+    nombre  = entry.1561595182
+    email   = entry.1342992053
+    asunto  = entry.1914372494
+    mensaje = entry.1106944345
+  -->
   </div>
 </section>
 
-<!-- https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse -->
 <!--
-nombre  = entry.1561595182
-email   = entry.1342992053
-asunto  = entry.1914372494
-mensaje = entry.1106944345
+Cordenadas de los clientes
+
+Jemazar                         19.47823, -70.68766
+
+Supermercado Central            19.461030, -70.684515
+Supermercado Superplaza         19.485876, -70.711846
+Supermercado Nacional Paseo     19.458070, -70.675458
+El Encanto                      19.452712, -70.702787
+El Encanto (El embrujo)         19.440511, -70.667471
+Supermercado El Tesoro          19.458931, -70.676598
+Supermercado Ureña Minier       19.491751, -70.707129
+Hipermoca                       19.399944, -70.518562
+Supermercado Compres            19.395080, -70.528439
+Supermercado Cooperativo        19.393676, -70.527848
+Supermercado Morel              19.556860, -71.071734
+
+Rancho Chito                    19.377138, -70.607819
+Square One                      19.442456, -70.687668
+Scory Café                      19.458707, -70.695316
+Lacar buffet                    19.459759, -70.694558
+La Parrillita                   19.459217, -70.681166
+Taberna de Pepe                 19.456491, -70.696335
+Tío Pan                         19.779939, -70.682003
+Juancel familiar                19.491111, -70.655461
+
+Sosua by the sea                19.768514, -70.517135
+Matum                           19.451828, -70.690895
+Blue Jacktar Hotel              19.770770, -70.650107
+Hotel Celuisma                  19.770799, -70.645827
 -->
