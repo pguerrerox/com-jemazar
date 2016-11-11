@@ -2,7 +2,6 @@
 <header>
   <!-- contenido header -->
   <div class="header__content">
-
     <!-- logo -->
     <div class="header__logo">
       <a href="{{site.baseurl}}/index.html">
@@ -23,11 +22,42 @@
       <a href="javascript:void(0);" onclick="openNav()">&#9776;</a>
     </nav>
 
-    <!-- language selector -->
-    <div class="header__lang">
-      <a href="#">English</a>
-      <!-- <span class="hr"></span> -->
-      <!-- <a href="index.html">Español</a> -->
+    <!-- redes sociales -->
+    <div class="header__redes">
+      <div class="facebook" "header-social-links">
+        <a href="http://www.facebook.com/jemazar" target="_blank">
+          {% include /icons/facebook1.html %}
+        </a>
+      </div>
+      <div class="instagram" "header-social-links">
+        <a href="http://www.instagram.com/jemazar" target="_blank">
+          {% include /icons/instagram1.html %}
+        </a>
+      </div>
+      <div class="linkeid" "header-social-links">
+        <a href="http://www.linkedin.com/jemazar" target="_blank">
+          {% include /icons/linkedin1.html %}
+        </a>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="header__search">
+      <script>
+      (function() {
+        var cx = '016335402370333474240:1vjowdojl-m';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = false;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:searchresults-only></gcse:searchresults-only>
+      <form action="" method="POST">
+        <input class="input" name="q" placeholder="Search...">
+      </form>
     </div>
   </div>
 
