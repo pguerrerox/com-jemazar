@@ -1,5 +1,14 @@
  <!-- seccion - header -->
 <header>
+  <!-- contenido barra -->
+  <div class="header__barra">
+    <!-- language selector -->
+    <div class="header__lang">
+      <a href="#">
+        <img src="{{site.baseurl}}/assets/img/lang/gb.png" alt="" /> English</a>
+    </div>
+  </div>
+
   <!-- contenido header -->
   <div class="header__content">
     <!-- logo -->
@@ -48,18 +57,16 @@
         var cx = '016335402370333474240:1vjowdojl-m';
         var gcse = document.createElement('script');
         gcse.type = 'text/javascript';
-        gcse.async = false;
+        gcse.async = true;
         gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
       })();
       </script>
-      <gcse:searchresults-only></gcse:searchresults-only>
-      <form action="" method="POST">
-        <input class="input" name="q" placeholder="Search...">
-      </form>
+      <gcse:search></gcse:search>
     </div>
   </div>
+
 
   <!-- MOBILE OVERLAY -->
   <div id="myNav" class="overlay" onclick="closeNav()">

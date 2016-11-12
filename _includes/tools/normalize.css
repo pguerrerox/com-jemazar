@@ -8,7 +8,7 @@ html,body
     background-color: white;
     font-size: 14px;
     line-height: 1.6;
-    font-family: "HelveticaNeue", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
 }
@@ -38,7 +38,7 @@ video {
   vertical-align: baseline;
 }
 h1{
-  font-family: HelveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bolder;;
   font-size: 35px;
@@ -47,7 +47,7 @@ h1{
   text-transform: uppercase;
 }
 h2{
-  font-family: HelveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -56,17 +56,27 @@ h2{
   text-transform: uppercase;
 }
 h3{
-  font-family: HelveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 23px;
+  color: #003399;
   text-align: center;
+  margin: 0;
+}
+h4{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
 }
 p, li{
-  font-family: HelveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   text-align: justify;
 }
 

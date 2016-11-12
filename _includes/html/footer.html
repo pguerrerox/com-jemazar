@@ -3,32 +3,62 @@
 
   <!-- contenido footer -->
   <div class="footer__content">
+    <div class="content__main">
+      <div class="info__direccion footer--format">
+        <div><span>{% include /icons/ic_domain.html %}</span></div>
+        <div class="info--detalle">
+          <h4>Dirección</h4>
+          <p>C/No.5, No.13<br>Padre Las Casas<br>Santiado, RD
+          </p>
+        </div>
+      </div>
+      <div class="info__telefono footer--format">
+        <div><span>{% include /icons/ic_phone.html %}</span></div>
+        <div class="info--detalle">
+          <h4>Contacto</h4>
+          <p>Telefono: (809) 583-5424 <br>
+          </p>
+        </div>
+      </div>
+      <div class="info__redes footer--format">
+        <div><span>{% include /icons/ic_group.html %}</span></div>
+        <div class="info--detalle">
+          <h4>Redes Sociales</h4>
+          <p>
+            <div class="redes__sociales">
+              <div class="facebook" "social-links">
+                <a href="http://www.facebook.com/jemazar" target="_blank">
+                  {% include /icons/facebook.html %}
+                </a>
+              </div>
+              <div class="instagram" "social-links">
+                <a href="http://www.instagram.com/jemazar" target="_blank">
+                  {% include /icons/instagram.html %}
+                </a>
+              </div>
+              <div class="linkeid" "social-links">
+                <a href="http://www.linkedin.com/jemazar" target="_blank">
+                  {% include /icons/linkedin.html %}
+                </a>
+              </div>
+            </div>
+          </p>
+        </div>
+        <!-- <div class="main__info">
+        </div> -->
+      </div>
+    </div>
+  </div>
 
+  <div class="content__secundary">
     <!-- copyright -->
     <div class="footer__copyright">
       <p>Copyright © 2016 - Jemazar. Todos los derechos reservados</p>
+    </div>
+    <div class="footer__developer">
+
       <p class="duramente">Developed by <a href="www.duramente.com.do" target="_blank">Duramente Web Studio</a>
       </p>
     </div>
-
-    <!-- redes sociales -->
-    <div class="footer__redes">
-      <div class="facebook" "social-links">
-        <a href="http://www.facebook.com/jemazar" target="_blank">
-          {% include /icons/facebook.html %}
-        </a>
-      </div>
-      <div class="instagram" "social-links">
-        <a href="http://www.instagram.com/jemazar" target="_blank">
-          {% include /icons/instagram.html %}
-        </a>
-      </div>
-      <div class="linkeid" "social-links">
-        <a href="http://www.linkedin.com/jemazar" target="_blank">
-          {% include /icons/linkedin.html %}
-        </a>
-      </div>
-    </div>
-
   </div>
 </footer>

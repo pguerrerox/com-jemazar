@@ -2,7 +2,7 @@
 footer{
   position: relative;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   background-color: #003399;
   z-index: 1060;
 }
@@ -10,63 +10,88 @@ footer{
   max-width: 1300px;
   margin: 0 auto ;
   padding: 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
 }
-.footer__copyright p{
-  color: white;
-  font-size: 14px;
-  margin: 3px 0;
-}
-.footer__copyright a{
-  font-size: 14px;
-  text-decoration: none;
-  color: rgb(0, 255, 0);
-  text-shadow:2px 2px 0 rgb(150, 0, 255);
-}
-.footer__copyright a:hover{
-  color: rgb(150, 0, 255);
-  text-shadow:2px 2px 0 rgb(0, 255, 0);
-}
-.footer__redes{
-  display: -webkit-box;
-  display: -ms-flexbox;
+.content__main{
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction:row;
+  justify-content: space-around;
+  align-content: center;
+}
+.footer--format{
+  /*width: 375px;*/
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+}
+.footer--format svg{
+  width: 18px;
+}
+.info--detalle{
+  padding-left: 5px;
+}
+.info__direccion, .info__telefono, .info__redes{
+  color: #ccc;
+}
+.redes__sociales{
+  display: flex;
+  flex-direction: row;
 }
 svg.footer__icons{
-  width: 36px;
+  width: 26px;
   height: auto;
   padding-left: 10px;
-  fill:white;
+  fill: #ccc;
 }
 svg.footer__icons:hover{
   fill:black;
+}
+.content__secundary{
+  background-color: #011d56;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer__copyright p, .footer__developer p{
+  padding: 5px 150px;
+  color: white;
+  font-size: 11px;
+  /*margin: 3px 0;*/
+}
+.footer__developer a{
+  font-size: 11px;
+  text-decoration: none;
+  color: rgb(33, 150, 243);
+}
+.footer__developer a:hover{
+  color: rgb(76, 175, 80);
 }
 
 
 @media screen and (max-width:800px) {
   .footer__content{
-    -ms-flex-flow: column;
-        flex-flow: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: column;
+    justify-content: center;
   }
-  .footer__copyright p{
+  .content__main{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+  }
+  .footer--format{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .content__secundary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__copyright p, .footer__developer p{
     text-align: center;
+    margin: 0 auto;
   }
-
-
-
 }
