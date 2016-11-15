@@ -151,7 +151,7 @@ ul.body__tablinks li a:focus, .active{
   display: flex;
   flex-direction: column;
   text-align: center;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 16px;
   font-weight: bold;
   margin: 0 5px 25px 5px;
@@ -173,7 +173,7 @@ ul.body__tablinks li a:focus, .active{
   -webkit-transform:translateZ(0) scale(1.15); /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform:translatZ(0) scale(1.15);
 }
-.strong--big{font-weight: normal; font-size: 18px;}
+.strong--big{font-weight: normal; font-size: 14px;}
 
 /*Modals*/
 .color--blanco{  color:#ffffff; font-weight:bold;}

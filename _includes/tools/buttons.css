@@ -6,7 +6,7 @@ input[type="button"] {
   display: inline-block;
   height: 40px;
   padding: 0 30px;
-  color: white;
+  color: #003399;
   text-align: center;
   font-size: 14px;
   /*font-weight: 600;*/
@@ -15,9 +15,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #003399;
-  /*border-radius: 4px;*/
-  border: 1px solid #bbb;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #003399;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -39,9 +39,9 @@ input[type="reset"]:focus,
 input[type="button"]:hover,
 input[type="button"]:active,
 input[type="button"]:focus {
-  color: #003399;
-  border-color: #003399;
-  background-color: white;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #003399;
   outline: 0;
 }
 
@@ -51,8 +51,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 0 30px;
-  color: white;
+  padding: 0 15px;
+  color: #003399;
   text-align: center;
   font-size: 14px;
   font-weight: normal;
@@ -60,11 +60,11 @@ input[type="button"] {
   letter-spacing: 0.1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #003399;
+  background-color: #ffffff;
   /*height: 40px;*/
   /*text-transform: uppercase;*/
-  /*border-radius: 4px;*/
-  border: 1px solid #bbb;
+  border-radius: 10px;
+  border: 1px solid #003399;
   /*cursor: pointer;*/
   box-sizing: border-box;
 }
