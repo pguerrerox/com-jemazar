@@ -93,5 +93,7 @@ svg.footer__icons:hover{
   .footer__copyright p, .footer__developer p{
     text-align: center;
     margin: 0 auto;
+      font-size: 10px;
+    padding: 5px 25px;
   }
 }

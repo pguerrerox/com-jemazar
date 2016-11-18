@@ -55,37 +55,64 @@
     <form class="form__contacto" id="form__contacto" action="https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
       <label for="nombre">Nombre*</label>
       <span class="form--control">
-        <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Perez" required="true">
+        <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Pérez" required="true">
       </span>
-      <label for="e-mail">Correo Electrónico*</label>
+
+      <label for="e-mail">Email*</label>
       <span class="form--control">
-        <input name="entry.1342992053" id="entry.1342992053" type="email" placeholder="joseperez@gmail.com" required="true">
+        <input name="entry.1342992053" id="entry.1342992053" type="email" placeholder="jose.perez@ejemplo.com" required="true">
       </span>
-      <label for="asunto">Aunto*</label>
+
+      <label for="ciudad">Ciudad</label>
       <span class="form--control">
-        <input name="entry.1914372494" id="entry.1914372494"type="text" placeholder="Hola Jemazar" required="true">
+        <input name="entry.1022856779" id="entry.1022856779" type="text" placeholder="Santiago" required="false">
       </span>
-      <label for="mensaje">Mensaje</label><br>
+
+      <label for="asunto">Asunto</label>
       <span class="form--control">
-        <textarea name="entry.1106944345" id="entry.1106944345" rows="8" cols="40" placeholder="Me gustaria...."></textarea>
+        <input name="entry.1914372494" id="entry.1914372494"type="text" placeholder="Hola Jemazar" required="false">
       </span>
-      <span class="buttom">
-        <input type="submit" name="enviar" value="ENVIAR">
+
+      <label for="tema">Tema*</label>
+      <span class="form--control">
+        <select name="entry.620397526" id="entry.620397526" type="text" required="true">
+          <option value="Solicitud de información">Solicitud de información</option>
+          <option value="Sugerencias y/o Comentarios">Sugerencias y/o Comentarios</option>
+          <option value="Servicio al cliente">Servicio al cliente</option>
+        </select>
       </span>
+
+      <label for="mensaje">Mensaje*</label><br>
+      <span class="form--control">
+        <textarea name="entry.1106944345" id="entry.1106944345" rows="8" cols="40" placeholder="Escribe tu mensaje aqui..." required="true"></textarea>
+      </span>
+
+      <div class="div--mid">
+          <input type="submit" name="enviar" value="ENVIAR">
+          <input type="hidden" name="redirect" value="http://google.com">
+      </div>
     </form>
 
-    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <!-- <div class="form__msg" id="form__msg">
+      <h2>¡Gracias por contactarnos!<br>Su mensaje ha sido enviado correctamente.</h2>
+      <p> Le daremos respuesta lo mas pronto posible.</p>
+    </div> -->
 
 
     <!-- https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse -->
     <!--
-    nombre  = entry.1561595182
-    email   = entry.1342992053
-    asunto  = entry.1914372494
-    mensaje = entry.1106944345
-  -->
+    entry.1561595182=pedro
+    entry.1342992053=saddasd@asdf.com
+    entry.1022856779=ciudad
+    entry.1914372494=Asunto
+    entry.620397526=tema
+    entry.1106944345=mensaje -->
+
   </div>
 </section>
+
 
 <!--
 Cordenadas de los clientes

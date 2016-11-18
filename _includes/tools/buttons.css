@@ -45,11 +45,7 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-.button2,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.button2{
   display: inline-block;
   padding: 0 15px;
   color: #003399;

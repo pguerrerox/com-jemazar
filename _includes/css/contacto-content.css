@@ -85,12 +85,6 @@ section{
   font-weight: bold;
 }
 
-
-
-
-
-
-
 /*FORMULARIO*/
 .forma{
   -ms-flex-flow: column;
@@ -100,16 +94,17 @@ section{
 .forma__info{
   margin: 0 0 30px 0;
 }
- .forma__campos{
-   padding: 15px;
-   background-color: #e0e0e0;
-
- }
+.forma__campos{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #e0e0e0;
+}
 label{
   font-weight: bold;
   color: #003399;
 }
-textarea, input[type=text], input[type=email]{
+textarea, input[type=text], input[type=email], select{
   display: inline-block;
   width: 100%;
   margin: 5px 0 15px 0;
@@ -119,12 +114,16 @@ textarea, input[type=text], input[type=email]{
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-textarea:focus, input[type=text]:focus, input[type=email]:focus{
+textarea:focus, input[type=text]:focus, input[type=email]:focus, select:focus{
   border: 2px solid #003399;
 }
 input[type=button]{
   width: 100%;
   margin: 0 auto;
+}
+.div--mid{
+  text-align: center;
+  margin: 0 10px;
 }
 hr {
   max-width: 1300px;
@@ -133,7 +132,6 @@ hr {
   margin: 20px auto 20px auto;
   padding: 0 10px;
 }
-
 
 /*GENERICOS*/
 .sin--transform{  text-transform: none;}
@@ -148,8 +146,6 @@ hr {
 .no--justify{  text-align: center;}
 .text--strong{  font-weight: bold;}
 .no--margin{margin: 0;}
-
-
 
 @media screen and (max-width:550px){
   .info__contacto{
