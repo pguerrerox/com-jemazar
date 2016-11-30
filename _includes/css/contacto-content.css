@@ -13,8 +13,6 @@ section{
       justify-content: space-around;
 }
 .banner{
-  background-color: #003399;
-  background-image: url("{{site.baseurl}}/assets/img/xlogo_cortado.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -43,9 +41,7 @@ section{
 }
 .info__contacto a{
   text-decoration: none;
-  font-size: 18px;
   color: inherit;
-  font-family: HelveticaNeue;
   font-style: normal;
 }
 .info__contacto a:hover, .info__contacto a:focus, h3:hover{
@@ -59,12 +55,102 @@ section{
 }
 .mapa__map{
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 490px;
+  border: 1px solid #003399;
+  overflow:hidden;
+}
+.mapa_canvas{
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-right: 1px solid #003399;
+}
+.tablinks__grid{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mapa__side{
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  background-color: blue;
+}
+.side__tabs{
+  background-color: green;
+}
+.body__tab{
+  border-bottom: 2px solid #ccc;
+}
+ul.body__tablinks{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color:#ffffff;
+  display: flex;
+  flex-direction: column;
+}
+ul.body__tablinks li{
+  display: flex;
+  justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+ul.body__tablinks li a{
+  display: inline-block;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0;
+  width: 100%;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+ul.body__tablinks li a:hover{
+  color: #fff;
+}
+ul.body__tablinks li a:focus, .active{
+  color: #ffffff;
+}
+ul.body__tablinks li:hover{
+  background-color: #003399;
+}
+ul.body__tablinks li:focus, .active{
+  background-color: #003399;
+}
+.side__bar{
+  background-color: red;
+}
+.side__bar{
+  padding: 20px;
+  overflow-y: scroll;
+}
+.mapa__sidebar a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mapa__sidebar a:hover, .mapa__sidebar a:focus{
+  color: #003399;
+  font-weight: bold;
+}
+
+/*
+.mapa__map{
+  display: flex;
   width: 100%;
   height: 500px;
   border: 1px solid #003399;
   overflow: hidden;
 }
+.tablinks_grid{
+}
 .mapa_canvas{
+  display: block;
   width: 100%;
   height: 100%;
   border-right: 1px solid #003399;
@@ -84,6 +170,12 @@ section{
   color: #003399;
   font-weight: bold;
 }
+iframe{
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+*/
 
 /*FORMULARIO*/
 .forma{

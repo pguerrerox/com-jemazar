@@ -1,6 +1,6 @@
 <section class="banner full--width no--padding">
   <div>
-    <h1 class="color--blanco">Gracias por su interés en Jemazar</h1>
+    <h1>Gracias por su interés en Jemazar</h1>
   </div>
 </section>
 
@@ -35,10 +35,88 @@
   </div>
 
   <div class="mapa__map">
-    <div class="mapa_canvas" id="map_canvas">  </div>
+    <div class="mapa_canvas">
+      <div id="map_canvas1" class="tablinks__grid"><h2>1</h2>  </div>
+      <div id="map_canvas2" class="tablinks__grid"><h2>2</h2>  </div>
+      <div id="map_canvas3" class="tablinks__grid"><h2>3</h2>  </div>
+      <div id="map_canvas4" class="tablinks__grid"><h2>4</h2>  </div>
+    </div>
 
-    <div class="mapa__sidebar" id="side_bar">  </div>
+    <div class="mapa__side">
+
+      <div class="side__tabs">
+        <div class="body__tab">
+          <ul class="body__tablinks">
+            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapa1(); mapasJemazar(event, 'map_canvas1', 'side__bar1')" id="tab__todos">Todos</a></li>
+
+            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapa2(); mapasJemazar(event, 'map_canvas2', 'side__bar2')" id="tab__supermercados">Supermercados</a></li>
+
+            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'map_canvas3')" id="tab__restautantes">Restaurantes</a></li>
+
+            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'map_canvas4')" id="tab__hoteles">Hoteles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="side__bar" id="side__bar1"></div>
+      <div class="side__bar" id="side__bar2"></div>
+    </div>
   </div>
+
+
+
+  <!-- tabs -->
+  <!-- <div class="body__tab">
+    <ul class="body__tablinks">
+
+      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'todos')" id="tab__todos">Todos</a></li>
+
+      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'supermercados'); initialize2();" id="tab__supermercados">Supermercados</a></li>
+
+
+      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'restaurantes')" id="tab__restautantes">Restaurantes</a></li>
+      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'hoteles') " id="tab__hoteles">Hoteles</a></li>
+    </ul>
+  </div> -->
+
+
+
+<!--
+  <div id="todos" class="tablinks__grid">
+    <iframe src="{{site.baseurl}}/pages/maps/todos.html" width="100%" height="100%">
+
+
+    </iframe> -->
+
+
+
+    <!-- <div class="mapa__map"> -->
+      <!-- <div class="mapa_canvas" id="map_canvas1">  </div> -->
+      <!-- <div class="mapa__sidebar" id="side_bar1">  </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+
+  <!-- <div id="supermercados" class="tablinks__grid">
+    <div class="mapa__map">
+      <div class="mapa_canvas" id="map_canvas2"> </div>
+      <div class="mapa__sidebar" id="side_bar2"> </div>
+    </div>
+  </div> -->
+
+  <!-- <div id="restaurantes" class="tablinks__grid">
+    <div class="mapa__map">
+      <div class="mapa_canvas" id="map_todos">  </div>
+      <div class="mapa__sidebar" id="side_bar">  </div>
+    </div>
+  </div>
+
+  <div id="hoteles" class="tablinks__grid">
+    <div class="mapa__map">
+      <div class="mapa_canvas" id="map_hoteles">  </div>
+      <div class="mapa__sidebar" id="side_bar">  </div>
+    </div>
+  </div> -->
+
 </section>
 
 <hr>
@@ -53,6 +131,7 @@
   </div>
   <div class="forma__campos">
     <form class="form__contacto" id="form__contacto" action="https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+
       <label for="nombre">Nombre*</label>
       <span class="form--control">
         <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Pérez" required="true">
@@ -89,7 +168,6 @@
 
       <div class="div--mid">
           <input type="submit" name="enviar" value="ENVIAR">
-          <input type="hidden" name="redirect" value="http://google.com">
       </div>
     </form>
 
@@ -119,17 +197,31 @@ Cordenadas de los clientes
 
 Jemazar                         19.47823, -70.68766
 
-Supermercado Central            19.461030, -70.684515
-Supermercado Superplaza         19.485876, -70.711846
-Supermercado Nacional Paseo     19.458070, -70.675458
 El Encanto                      19.452712, -70.702787
 El Encanto (El embrujo)         19.440511, -70.667471
-Supermercado El Tesoro          19.458931, -70.676598
-Supermercado Ureña Minier       19.491751, -70.707129
 Hipermoca                       19.399944, -70.518562
+Jumbo (Ágora)                   18.484031, -69.938663
+Jumbo (la Romana)               18.418623, -68.966078
+Jumbo (Las colinas)             19.473130, -70.713878
+Jumbo (Moca)                    19.390404, -70.525967
+Jumbo (San Pedro de Macorís)    18.454549, -69.297653
+Supermercado Central            19.461030, -70.684515
 Supermercado Compres            19.395080, -70.528439
 Supermercado Cooperativo        19.393676, -70.527848
+Supermercado El Tesoro          19.458931, -70.676598
 Supermercado Morel              19.556860, -71.071734
+Supermercado Nacional (27 de Febrero)         18.465487, -69.929164
+Supermercado Nacional (Av. Charles de Gaulle) 18.513570, -69.831072
+Supermercado Nacional (Av. Gómez)             18.465085, -69.910472
+Supermercado Nacional (Av. Independencia)     18.431735, -69.970121
+Supermercado Nacional (Camino Chiquito)       18.502118, -69.942950
+Supermercado Nacional (Duarte)               18.473032, -69.885831
+Supermercado Nacional (El Millón)             18.459059, -69.956608
+Supermercado Nacional (Punta Cana)            18.559305, -68.369694
+Supermercado Nacional (Tiradentes)            18.472518, -69.924960
+Supermercado Nacional Paseo     19.458070, -70.675458
+Supermercado Superplaza         19.485876, -70.711846
+Supermercado Ureña Minier       19.491751, -70.707129
 
 Rancho Chito                    19.377138, -70.607819
 Square One                      19.442456, -70.687668

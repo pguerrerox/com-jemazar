@@ -206,6 +206,10 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.marcas__rottis a, .marcas__nauj a, .marcas__costero a, .marcas__baruk a{
+  text-align: center;
+}
+
 .marcas__rottis img, .marcas__nauj img, .marcas__costero img{
   max-width: 225px;
   height: auto;

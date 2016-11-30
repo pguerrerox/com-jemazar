@@ -3,7 +3,6 @@ header{
   position: relative;
   background-color: #ffffff;
   max-width: 100%;
-  /*padding: 5px 0;*/
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.75);
   z-index: 1110;
 }
@@ -13,12 +12,10 @@ header{
   background-color: #003399;
 }
 .header__lang{
-  /*display: none;*/
-  position:relative;
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
   text-align: right;
-
 }
 .header__lang a{
   position:absolute;
@@ -31,7 +28,6 @@ header{
 }
 .header__lang a img{
   height: 10px;
-
 }
 .header__content{
   max-width: 1000px;
@@ -62,9 +58,9 @@ svg.header__logo{
 .header__navbar a{
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 11px;
-  color: #003399;
-  padding: 5px;
+  font-size: 12px;
+  color: #999;
+  padding: 15px;
   border-radius: 5px;
   font-family: HelveticaNeue;
   font-style: normal;
@@ -73,22 +69,22 @@ svg.header__logo{
 .header__navbar a:last-child{
   display: none;
 }
-
 .header__navbar a:hover{
-  color: #001233;
+  color: #003399;
+  background-color: #cacaca;
+  transition: 0.5s;
   text-decoration: none;
 }
 .header__navbar a:active{
-  color:white;
-  background-color: #003399;
+  color:#003399;
   text-decoration: none;
 }
 body#nav__inicio a#nav__inicio,
 body#nav__nosotros a#nav__nosotros,
 body#nav__productos a#nav__productos,
 body#nav__contacto a#nav__contacto{
-  color: #ffffff;
-  background-color: #003399;
+  color: #003399;
+  background-color: #eeeeee;
 }
 .hr{
   border-left: 2px solid #003399;

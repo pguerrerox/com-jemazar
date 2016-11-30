@@ -1,11 +1,10 @@
- <!-- seccion - header -->
+<!-- seccion - header -->
 <header>
   <!-- contenido barra -->
   <div class="header__barra">
     <!-- language selector -->
     <div class="header__lang">
-      <a href="#">
-        <img src="{{site.baseurl}}/assets/img/lang/gb.png" alt="" /> English</a>
+      <a href="#">English</a>
     </div>
   </div>
 
@@ -15,40 +14,17 @@
     <div class="header__logo">
       <a href="{{site.baseurl}}/index.html">
         {% include /icons/logo.html %}
-        <!-- <img src="{{site.baseurl}}/assets/img/xlogo.png" alt="" /> -->
       </a>
     </div>
 
     <!-- navbar -->
     <nav class="header__navbar">
       <a href="{{site.baseurl}}/index.html" id="nav__inicio">Inicio</a>
-      <span class="hr"></span>
       <a href="{{site.baseurl}}/pages/nosotros.html" id="nav__nosotros">Nosotros</a>
-      <span class="hr"></span>
       <a href="{{site.baseurl}}/pages/productos.html" id="nav__productos">Productos</a>
-      <span class="hr"></span>
       <a href="{{site.baseurl}}/pages/contacto.html" id="nav__contacto">Contacto</a>
       <a href="javascript:void(0);" onclick="openNav()">&#9776;</a>
     </nav>
-
-    <!-- redes sociales -->
-    <div class="header__redes">
-      <div class="facebook" "header-social-links">
-        <a href="http://www.facebook.com/jemazar" target="_blank">
-          {% include /icons/facebook1.html %}
-        </a>
-      </div>
-      <div class="instagram" "header-social-links">
-        <a href="http://www.instagram.com/jemazar" target="_blank">
-          {% include /icons/instagram1.html %}
-        </a>
-      </div>
-      <div class="linkeid" "header-social-links">
-        <a href="http://www.linkedin.com/jemazar" target="_blank">
-          {% include /icons/linkedin1.html %}
-        </a>
-      </div>
-    </div>
 
     <!-- Search Bar -->
     <div class="header__search">
@@ -90,5 +66,4 @@
     document.getElementById("myNav").style.width = "0%";
   }
   </script>
-
 </header>
