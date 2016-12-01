@@ -1,8 +1,8 @@
-<section class="banner full--width no--padding">
+<!-- <section class="banner full--width no--padding">
   <div>
     <h1>Gracias por su interés en Jemazar</h1>
   </div>
-</section>
+</section> -->
 
 <section class="info">
   <h2 class="sin--transform align--left no--margin--top">Puedes contactarnos,</h2>
@@ -24,7 +24,7 @@
   </div>
 </section>
 
-<hr>
+<!-- <hr>
 
 <section class="mapa">
   <div class="mapa__info">
@@ -43,7 +43,6 @@
     </div>
 
     <div class="mapa__side">
-
       <div class="side__tabs">
         <div class="body__tab">
           <ul class="body__tablinks">
@@ -51,75 +50,24 @@
 
             <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapa2(); mapasJemazar(event, 'map_canvas2', 'side__bar2')" id="tab__supermercados">Supermercados</a></li>
 
-            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'map_canvas3')" id="tab__restautantes">Restaurantes</a></li>
+            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapa3(); mapasJemazar(event, 'map_canvas3', 'side__bar3')" id="tab__restautantes">Restaurantes</a></li>
 
-            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'map_canvas4')" id="tab__hoteles">Hoteles</a></li>
+            <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapa4(); mapasJemazar(event, 'map_canvas4', 'side__bar4')" id="tab__hoteles">Hoteles</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="side__bar" id="side__bar1"></div>
-      <div class="side__bar" id="side__bar2"></div>
+      <div class="side__bars">
+        <div class="side__bar" id="side__bar1"></div>
+        <div class="side__bar" id="side__bar2"></div>
+        <div class="side__bar" id="side__bar3"></div>
+        <div class="side__bar" id="side__bar4"></div>
+      </div>
     </div>
   </div>
-
-
-
-  <!-- tabs -->
-  <!-- <div class="body__tab">
-    <ul class="body__tablinks">
-
-      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'todos')" id="tab__todos">Todos</a></li>
-
-      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'supermercados'); initialize2();" id="tab__supermercados">Supermercados</a></li>
-
-
-      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'restaurantes')" id="tab__restautantes">Restaurantes</a></li>
-      <li><a href="javascript:void(0)" class="tablinks__tab" onclick="mapasJemazar(event, 'hoteles') " id="tab__hoteles">Hoteles</a></li>
-    </ul>
-  </div> -->
-
-
-
-<!--
-  <div id="todos" class="tablinks__grid">
-    <iframe src="{{site.baseurl}}/pages/maps/todos.html" width="100%" height="100%">
-
-
-    </iframe> -->
-
-
-
-    <!-- <div class="mapa__map"> -->
-      <!-- <div class="mapa_canvas" id="map_canvas1">  </div> -->
-      <!-- <div class="mapa__sidebar" id="side_bar1">  </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-
-  <!-- <div id="supermercados" class="tablinks__grid">
-    <div class="mapa__map">
-      <div class="mapa_canvas" id="map_canvas2"> </div>
-      <div class="mapa__sidebar" id="side_bar2"> </div>
-    </div>
-  </div> -->
-
-  <!-- <div id="restaurantes" class="tablinks__grid">
-    <div class="mapa__map">
-      <div class="mapa_canvas" id="map_todos">  </div>
-      <div class="mapa__sidebar" id="side_bar">  </div>
-    </div>
-  </div>
-
-  <div id="hoteles" class="tablinks__grid">
-    <div class="mapa__map">
-      <div class="mapa_canvas" id="map_hoteles">  </div>
-      <div class="mapa__sidebar" id="side_bar">  </div>
-    </div>
-  </div> -->
-
 </section>
 
-<hr>
+<hr> -->
 
 <section class="forma">
   <div class="forma__info">
@@ -129,55 +77,52 @@
       una vez recibido su mensaje le estaremos contactando para ofrecerle respuesta a su solicitud, inquietud o pregunta.
     </p>
   </div>
-  <div class="forma__campos">
-    <form class="form__contacto" id="form__contacto" action="https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 
-      <label for="nombre">Nombre*</label>
-      <span class="form--control">
-        <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Pérez" required="true">
-      </span>
+  <div class="forma__wrapper">
+    <div class="forma__contacto">
+      <form class="form__contacto" id="form__contacto" action="https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 
-      <label for="e-mail">Email*</label>
-      <span class="form--control">
-        <input name="entry.1342992053" id="entry.1342992053" type="email" placeholder="jose.perez@ejemplo.com" required="true">
-      </span>
+        <label for="nombre">Nombre*</label>
+        <span class="form--control">
+          <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Pérez" required="true">
+        </span>
 
-      <label for="ciudad">Ciudad</label>
-      <span class="form--control">
-        <input name="entry.1022856779" id="entry.1022856779" type="text" placeholder="Santiago" required="false">
-      </span>
+        <label for="e-mail">Email*</label>
+        <span class="form--control">
+          <input name="entry.1342992053" id="entry.1342992053" type="email" placeholder="jose.perez@ejemplo.com" required="true">
+        </span>
 
-      <label for="asunto">Asunto</label>
-      <span class="form--control">
-        <input name="entry.1914372494" id="entry.1914372494"type="text" placeholder="Hola Jemazar" required="false">
-      </span>
+        <label for="ciudad">Ciudad</label>
+        <span class="form--control">
+          <input name="entry.1022856779" id="entry.1022856779" type="text" placeholder="Santiago" required="false">
+        </span>
 
-      <label for="tema">Tema*</label>
-      <span class="form--control">
-        <select name="entry.620397526" id="entry.620397526" type="text" required="true">
-          <option value="Solicitud de información">Solicitud de información</option>
-          <option value="Sugerencias y/o Comentarios">Sugerencias y/o Comentarios</option>
-          <option value="Servicio al cliente">Servicio al cliente</option>
-        </select>
-      </span>
+        <label for="asunto">Asunto</label>
+        <span class="form--control">
+          <input name="entry.1914372494" id="entry.1914372494"type="text" placeholder="Hola Jemazar" required="false">
+        </span>
 
-      <label for="mensaje">Mensaje*</label><br>
-      <span class="form--control">
-        <textarea name="entry.1106944345" id="entry.1106944345" rows="8" cols="40" placeholder="Escribe tu mensaje aqui..." required="true"></textarea>
-      </span>
+        <label for="tema">Tema*</label>
+        <span class="form--control">
+          <select name="entry.620397526" id="entry.620397526" type="text" required="true">
+            <option value="Solicitud de información">Solicitud de información</option>
+            <option value="Sugerencias y/o Comentarios">Sugerencias y/o Comentarios</option>
+            <option value="Servicio al cliente">Servicio al cliente</option>
+          </select>
+        </span>
 
-      <div class="div--mid">
+        <label for="mensaje">Mensaje*</label><br>
+        <span class="form--control">
+          <textarea name="entry.1106944345" id="entry.1106944345" rows="8" cols="40" placeholder="Escribe tu mensaje aqui..." required="true"></textarea>
+        </span>
+
+        <div class="div--mid">
           <input type="submit" name="enviar" value="ENVIAR">
-      </div>
-    </form>
+        </div>
+      </form>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-    <!-- <div class="form__msg" id="form__msg">
-      <h2>¡Gracias por contactarnos!<br>Su mensaje ha sido enviado correctamente.</h2>
-      <p> Le daremos respuesta lo mas pronto posible.</p>
-    </div> -->
-
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </div>
 
     <!-- https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse -->
     <!--
@@ -186,54 +131,27 @@
     entry.1022856779=ciudad
     entry.1914372494=Asunto
     entry.620397526=tema
-    entry.1106944345=mensaje -->
+    entry.1106944345=mensaje
+    -->
 
+    <div class="forma__empleo">
+      <h3>Solicitud de Empleo</h3>
+      <p>Agradecemos el interés de pertenecer a nuestro equipo, envíanos tu CV.</p>
+      <div class="div--mid">
+        <a href="{{site.baseurl}}/pages/empleo.html">
+          <button type="button" name="button">ENVIAR</button>
+        </a>
+      </div>
+    </div>
   </div>
+
+
+
+
+
+
+
+
+
+
 </section>
-
-
-<!--
-Cordenadas de los clientes
-
-Jemazar                         19.47823, -70.68766
-
-El Encanto                      19.452712, -70.702787
-El Encanto (El embrujo)         19.440511, -70.667471
-Hipermoca                       19.399944, -70.518562
-Jumbo (Ágora)                   18.484031, -69.938663
-Jumbo (la Romana)               18.418623, -68.966078
-Jumbo (Las colinas)             19.473130, -70.713878
-Jumbo (Moca)                    19.390404, -70.525967
-Jumbo (San Pedro de Macorís)    18.454549, -69.297653
-Supermercado Central            19.461030, -70.684515
-Supermercado Compres            19.395080, -70.528439
-Supermercado Cooperativo        19.393676, -70.527848
-Supermercado El Tesoro          19.458931, -70.676598
-Supermercado Morel              19.556860, -71.071734
-Supermercado Nacional (27 de Febrero)         18.465487, -69.929164
-Supermercado Nacional (Av. Charles de Gaulle) 18.513570, -69.831072
-Supermercado Nacional (Av. Gómez)             18.465085, -69.910472
-Supermercado Nacional (Av. Independencia)     18.431735, -69.970121
-Supermercado Nacional (Camino Chiquito)       18.502118, -69.942950
-Supermercado Nacional (Duarte)               18.473032, -69.885831
-Supermercado Nacional (El Millón)             18.459059, -69.956608
-Supermercado Nacional (Punta Cana)            18.559305, -68.369694
-Supermercado Nacional (Tiradentes)            18.472518, -69.924960
-Supermercado Nacional Paseo     19.458070, -70.675458
-Supermercado Superplaza         19.485876, -70.711846
-Supermercado Ureña Minier       19.491751, -70.707129
-
-Rancho Chito                    19.377138, -70.607819
-Square One                      19.442456, -70.687668
-Scory Café                      19.458707, -70.695316
-Lacar buffet                    19.459759, -70.694558
-La Parrillita                   19.459217, -70.681166
-Taberna de Pepe                 19.456491, -70.696335
-Tío Pan                         19.779939, -70.682003
-Juancel familiar                19.491111, -70.655461
-
-Sosua by the sea                19.768514, -70.517135
-Matum                           19.451828, -70.690895
-Blue Jacktar Hotel              19.770770, -70.650107
-Hotel Celuisma                  19.770799, -70.645827
--->

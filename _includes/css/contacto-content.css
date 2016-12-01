@@ -44,7 +44,7 @@ section{
   color: inherit;
   font-style: normal;
 }
-.info__contacto a:hover, .info__contacto a:focus, h3:hover{
+.info__contacto a:hover, .info__contacto a:focus, .info__contacto h3:hover{
   color: #003399;
   font-weight: bold;
 }
@@ -57,29 +57,26 @@ section{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 490px;
+  height: 470px;
   border: 1px solid #003399;
   overflow:hidden;
 }
 .mapa_canvas{
   display: block;
   width: 100%;
-  height: 500px;
+  height: 100%;
   border-right: 1px solid #003399;
 }
 .tablinks__grid{
-  position: relative;
   width: 100%;
   height: 100%;
 }
 .mapa__side{
   display: flex;
   flex-direction: column;
-  min-width: 200px;
-  background-color: blue;
+  width:400px;
 }
 .side__tabs{
-  background-color: green;
 }
 .body__tab{
   border-bottom: 2px solid #ccc;
@@ -91,13 +88,14 @@ ul.body__tablinks{
   overflow: hidden;
   background-color:#ffffff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 ul.body__tablinks li{
   display: flex;
   justify-content: center;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 50%;
 }
 ul.body__tablinks li a{
   display: inline-block;
@@ -121,61 +119,35 @@ ul.body__tablinks li:hover{
 ul.body__tablinks li:focus, .active{
   background-color: #003399;
 }
-.side__bar{
-  background-color: red;
-}
-.side__bar{
-  padding: 20px;
-  overflow-y: scroll;
-}
-.mapa__sidebar a{
-  text-decoration: none;
-  color: inherit;
-  font-size: 14px;
-  font-weight: 400;
-}
-.mapa__sidebar a:hover, .mapa__sidebar a:focus{
-  color: #003399;
-  font-weight: bold;
-}
-
-/*
-.mapa__map{
-  display: flex;
-  width: 100%;
-  height: 500px;
-  border: 1px solid #003399;
+.side__bars{
+  height: 100%;
   overflow: hidden;
 }
-.tablinks_grid{
-}
-.mapa_canvas{
-  display: block;
-  width: 100%;
+.side__bar{
   height: 100%;
-  border-right: 1px solid #003399;
-}
-.mapa__sidebar{
-  width: 25%;
-  padding: 20px;
+  padding: 20px 0;
   overflow-y: scroll;
 }
-.mapa__sidebar a{
-  text-decoration: none;
+.side__bar a{
+  display: inline-block;
+  width: 100%;
+  padding: 0 30px;
   color: inherit;
   font-size: 14px;
   font-weight: 400;
+  /*text-align: center;*/
+  text-decoration: none;
 }
-.mapa__sidebar a:hover, .mapa__sidebar a:focus{
+.side__bar a:hover{
   color: #003399;
   font-weight: bold;
+  background-color:#cacaca;
 }
-iframe{
-  width: 100%;
-  height: 500px;
-  border: 0;
+ .side__bar a:focus, .side__bar a:active{
+  color: #003399;
+  font-weight: bold;
+  background-color: #eeeeee;
 }
-*/
 
 /*FORMULARIO*/
 .forma{
@@ -186,11 +158,25 @@ iframe{
 .forma__info{
   margin: 0 0 30px 0;
 }
-.forma__campos{
+.forma__wrapper{
+  display: flex;
+  flex-direction:row;
+}
+.forma__contacto{
   max-width: 600px;
   margin: 0 auto;
   padding: 15px;
   background-color: #e0e0e0;
+}
+.forma__empleo{
+  padding: 50px;
+}
+.forma__empleo h3{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.forma__empleo p{
+  font-size: 20px;
 }
 label{
   font-weight: bold;
