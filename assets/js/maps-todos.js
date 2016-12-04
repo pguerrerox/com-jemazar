@@ -43,29 +43,32 @@ function initialize1() {
   var marker = createMarker(point,"Jemazar","<strong>Jemazar</strong><br>Empresa dominicana dedicada a la distribución de productos lácteos, cárnicos, pescados y mariscos de la más alta calidad con precios competitivos.",iconjemazar);
 
   //Supermercados
-  point = new google.maps.LatLng(19.461030, -70.684515);
-  marker = createMarker(point,"<br>Supermercado Central","<strong>Supermercado Central</strong>",iconsupermercados);
-
-  point = new google.maps.LatLng(19.485876, -70.711846);
-  marker = createMarker(point,"Supermercado Superplaza","<strong>Supermercado Superplaza</strong>",iconsupermercados);
-
-  point = new google.maps.LatLng(19.458070, -70.675458);
-  marker = createMarker(point,"Supermercado Nacional Paseo","<strong>Supermercado Nacional Paseo</strong>",iconsupermercados);
-
   point = new google.maps.LatLng(19.452712, -70.702787);
-  marker = createMarker(point,"El Encanto","<strong>El Encanto</strong>",iconsupermercados);
+  marker = createMarker(point,"<br>El Encanto","<strong>El Encanto</strong>",iconsupermercados);
 
   point = new google.maps.LatLng(19.440511, -70.667471);
   marker = createMarker(point,"El Encanto (El Embrujo)","<strong>El Encanto (El Embrujo)</strong>",iconsupermercados);
 
-  point = new google.maps.LatLng(19.458931, -70.676598);
-  marker = createMarker(point,"Supermercado El Tesoro","<strong>Supermercado El Tesoro</strong>",iconsupermercados);
-
-  point = new google.maps.LatLng(19.491751, -70.707129);
-  marker = createMarker(point,"Supermercado Ureña Minier","<strong>Supermercado Ureña Minier</strong>",iconsupermercados);
-
   point = new google.maps.LatLng(19.399944, -70.518562);
-  marker = createMarker(point,"Supermercado Hipermoca","<strong>Supermercado Hipermoca</strong>",iconsupermercados);
+  marker = createMarker(point,"Hipermoca","<strong>Hipermoca</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.484031, -69.938663);
+  marker = createMarker(point,"Jumbo (Ágora)","<strong>Jumbo (Ágora)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.418623, -68.966078);
+  marker = createMarker(point,"Jumbo (Las colinas)","<strong>Jumbo (Las colinas)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.390404, -70.525967);
+  marker = createMarker(point,"Jumbo (Moca)","<strong>Jumbo (Moca)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.418623, -68.966078);
+  marker = createMarker(point,"Jumbo (la Romana)","<strong>Jumbo (la Romana)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.454549, -69.297653);
+  marker = createMarker(point,"Jumbo (San Pedro de Macorís)","<strong>Jumbo (San Pedro de Macorís)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.461030, -70.684515);
+  marker = createMarker(point,"Supermercado Central","<strong>Supermercado Central</strong>",iconsupermercados);
 
   point = new google.maps.LatLng(19.395080, -70.528439);
   marker = createMarker(point,"Supermercado Compres","<strong>Supermercado Compres</strong>",iconsupermercados);
@@ -73,8 +76,47 @@ function initialize1() {
   point = new google.maps.LatLng(19.393676, -70.527848);
   marker = createMarker(point,"Supermercado Cooperativo","<strong>Supermercado Cooperativo</strong>",iconsupermercados);
 
+  point = new google.maps.LatLng(19.458931, -70.676598);
+  marker = createMarker(point,"Supermercado El Tesoro","<strong>Supermercado El Tesoro</strong>",iconsupermercados);
+
   point = new google.maps.LatLng(19.556860, -71.071734);
   marker = createMarker(point,"Supermercado Morel","<strong>Supermercado Morel</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.465487, -69.929164);
+  marker = createMarker(point,"Supermercado Nacional (27 de Febrero)","<strong>Supermercado Nacional (27 de Febrero)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.513570, -69.831072);
+  marker = createMarker(point,"Supermercado Nacional (Av. Charles de Gaulle)","<strong>Supermercado Nacional (Av. Charles de Gaulle)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.465085, -69.910472);
+  marker = createMarker(point,"Supermercado Nacional (Av. Gómez)","<strong>Supermercado Nacional (Av. Gómez)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.431735, -69.970121);
+  marker = createMarker(point,"Supermercado Nacional (Av. Independencia)","<strong>Supermercado Nacional (Av. Independencia)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.502118, -69.942950);
+  marker = createMarker(point,"Supermercado Nacional (Camino Chiquito)","<strong>Supermercado Nacional (Camino Chiquito)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.473032, -69.885831);
+  marker = createMarker(point,"Supermercado Nacional (Duarte)","<strong>Supermercado Nacional (Duarte)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.459059, -69.956608);
+  marker = createMarker(point,"Supermercado Nacional (El Millón)","<strong>Supermercado Nacional (El Millón)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.559305, -68.369694);
+  marker = createMarker(point,"Supermercado Nacional (Punta Cana)","<strong>Supermercado Nacional (Punta Cana)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.472518, -69.924960);
+  marker = createMarker(point,"Supermercado Nacional (Tiradentes)","<strong>Supermercado Nacional (Tiradentes)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.458070, -70.675458);
+  marker = createMarker(point,"Supermercado Nacional Paseo","<strong>Supermercado Nacional Paseo</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.485876, -70.711846);
+  marker = createMarker(point,"Supermercado Superplaza","<strong>Supermercado Superplaza</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.491751, -70.707129);
+  marker = createMarker(point,"Supermercado Ureña Minier","<strong>Supermercado Ureña Minier</strong>",iconsupermercados);
 
   //Restaurantes
   point = new google.maps.LatLng(19.377138, -70.607819);
@@ -181,29 +223,32 @@ function initialize2() {
   var marker = createMarker(point,"Jemazar","<strong>Jemazar</strong><br>Empresa dominicana dedicada a la distribución de productos lácteos, cárnicos, pescados y mariscos de la más alta calidad con precios competitivos.",iconjemazar);
 
   //Supermercados
-  point = new google.maps.LatLng(19.461030, -70.684515);
-  marker = createMarker(point,"<br>Supermercado Central","<strong>Supermercado Central</strong>",iconsupermercados);
-
-  point = new google.maps.LatLng(19.485876, -70.711846);
-  marker = createMarker(point,"Supermercado Superplaza","<strong>Supermercado Superplaza</strong>",iconsupermercados);
-
-  point = new google.maps.LatLng(19.458070, -70.675458);
-  marker = createMarker(point,"Supermercado Nacional Paseo","<strong>Supermercado Nacional Paseo</strong>",iconsupermercados);
-
   point = new google.maps.LatLng(19.452712, -70.702787);
-  marker = createMarker(point,"El Encanto","<strong>El Encanto</strong>",iconsupermercados);
+  marker = createMarker(point,"<br>El Encanto","<strong>El Encanto</strong>",iconsupermercados);
 
   point = new google.maps.LatLng(19.440511, -70.667471);
   marker = createMarker(point,"El Encanto (El Embrujo)","<strong>El Encanto (El Embrujo)</strong>",iconsupermercados);
 
-  point = new google.maps.LatLng(19.458931, -70.676598);
-  marker = createMarker(point,"Supermercado El Tesoro","<strong>Supermercado El Tesoro</strong>",iconsupermercados);
-
-  point = new google.maps.LatLng(19.491751, -70.707129);
-  marker = createMarker(point,"Supermercado Ureña Minier","<strong>Supermercado Ureña Minier</strong>",iconsupermercados);
-
   point = new google.maps.LatLng(19.399944, -70.518562);
-  marker = createMarker(point,"Supermercado Hipermoca","<strong>Supermercado Hipermoca</strong>",iconsupermercados);
+  marker = createMarker(point,"Hipermoca","<strong>Hipermoca</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.484031, -69.938663);
+  marker = createMarker(point,"Jumbo (Ágora)","<strong>Jumbo (Ágora)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.418623, -68.966078);
+  marker = createMarker(point,"Jumbo (Las colinas)","<strong>Jumbo (Las colinas)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.390404, -70.525967);
+  marker = createMarker(point,"Jumbo (Moca)","<strong>Jumbo (Moca)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.418623, -68.966078);
+  marker = createMarker(point,"Jumbo (la Romana)","<strong>Jumbo (la Romana)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.454549, -69.297653);
+  marker = createMarker(point,"Jumbo (San Pedro de Macorís)","<strong>Jumbo (San Pedro de Macorís)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.461030, -70.684515);
+  marker = createMarker(point,"Supermercado Central","<strong>Supermercado Central</strong>",iconsupermercados);
 
   point = new google.maps.LatLng(19.395080, -70.528439);
   marker = createMarker(point,"Supermercado Compres","<strong>Supermercado Compres</strong>",iconsupermercados);
@@ -211,8 +256,47 @@ function initialize2() {
   point = new google.maps.LatLng(19.393676, -70.527848);
   marker = createMarker(point,"Supermercado Cooperativo","<strong>Supermercado Cooperativo</strong>",iconsupermercados);
 
+  point = new google.maps.LatLng(19.458931, -70.676598);
+  marker = createMarker(point,"Supermercado El Tesoro","<strong>Supermercado El Tesoro</strong>",iconsupermercados);
+
   point = new google.maps.LatLng(19.556860, -71.071734);
   marker = createMarker(point,"Supermercado Morel","<strong>Supermercado Morel</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.465487, -69.929164);
+  marker = createMarker(point,"Supermercado Nacional (27 de Febrero)","<strong>Supermercado Nacional (27 de Febrero)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.513570, -69.831072);
+  marker = createMarker(point,"Supermercado Nacional (Av. Charles de Gaulle)","<strong>Supermercado Nacional (Av. Charles de Gaulle)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.465085, -69.910472);
+  marker = createMarker(point,"Supermercado Nacional (Av. Gómez)","<strong>Supermercado Nacional (Av. Gómez)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.431735, -69.970121);
+  marker = createMarker(point,"Supermercado Nacional (Av. Independencia)","<strong>Supermercado Nacional (Av. Independencia)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.502118, -69.942950);
+  marker = createMarker(point,"Supermercado Nacional (Camino Chiquito)","<strong>Supermercado Nacional (Camino Chiquito)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.473032, -69.885831);
+  marker = createMarker(point,"Supermercado Nacional (Duarte)","<strong>Supermercado Nacional (Duarte)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.459059, -69.956608);
+  marker = createMarker(point,"Supermercado Nacional (El Millón)","<strong>Supermercado Nacional (El Millón)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.559305, -68.369694);
+  marker = createMarker(point,"Supermercado Nacional (Punta Cana)","<strong>Supermercado Nacional (Punta Cana)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(18.472518, -69.924960);
+  marker = createMarker(point,"Supermercado Nacional (Tiradentes)","<strong>Supermercado Nacional (Tiradentes)</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.458070, -70.675458);
+  marker = createMarker(point,"Supermercado Nacional Paseo","<strong>Supermercado Nacional Paseo</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.485876, -70.711846);
+  marker = createMarker(point,"Supermercado Superplaza","<strong>Supermercado Superplaza</strong>",iconsupermercados);
+
+  point = new google.maps.LatLng(19.491751, -70.707129);
+  marker = createMarker(point,"Supermercado Ureña Minier","<strong>Supermercado Ureña Minier</strong>",iconsupermercados);
 
   // put the assembled side_bar_html contents into the side_bar div
   document.getElementById("side__bar2").innerHTML = "";
