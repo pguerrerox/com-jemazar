@@ -82,11 +82,12 @@ section{
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  flex-wrap:wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
-          align-items: baseline;
+      align-items: baseline;
   margin: 15px auto;
 
 }
@@ -102,6 +103,7 @@ section{
   /*text-transform: uppercase;*/
   text-align: center;
   font-size: 16px;
+  margin: 20px 10px;
 }
 .productos a{
   font-weight: bold;
