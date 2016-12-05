@@ -10,15 +10,23 @@ section{
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.banner{
+.header{
+  margin: 30px auto 30px auto;
+}
+.header .header__logo a{
+  display: block;
+  text-align: center;
+}
+.header .header__logo a svg{
+  width: 300px;
+  height: auto;
+}
+.banner span{
+  height: 1px;
   background-color: #003399;
-  background-image: url("{{site.baseurl}}/assets/img/xlogo_cortado.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .info{
-  margin: 60px auto 0 auto;
+  margin: 30px auto 30px auto;
 }
 .forma{
   -ms-flex-flow: column;

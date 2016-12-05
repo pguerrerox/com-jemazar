@@ -1,9 +1,14 @@
-<!--Base on the code Written by Amit Agarwal amit@labnol.org -->
-
-<section class="banner full--width no--padding">
-  <div>
-    <h1 class="color--blanco">¿Quieres trabajar con nosotros?</h1>
+<section class="header">
+  <div class="header__logo">
+    <a href="{{site.baseurl}}/index.html">
+      {% include /icons/logo.html %}
+    </a>
   </div>
+</section>
+
+<section class="banner">
+  <span class="full--width"></span>
+  <h1>¿Quieres trabajar con nosotros?</h1>
 </section>
 
 <section class="info">
@@ -11,9 +16,43 @@
   <p>
     Usando el siguiente formulario podras enviarnos tu <strong>curriculum vitae (CV)</strong>, no olvides completar con informacion real, de otra forma no podremos evaluarte.
   </p>
+</section>
 
-  <iframe src="https://script.google.com/macros/s/AKfycbynYjVsNaawuovQjEunxxFiFC2-ZAZ--B0CG_iI64rHEHrMpEE/exec" width="600px" height="500px"></iframe>
+<section class="forma">
+  <div class="forma__campos">
+    <form class="form__empleo" id="form" novalidate="novalidate">
+      <div id="forminner">
 
+        <label for="name">Nombre*</label>
+        <span class="form--control">
+          <input id="name" type="text" name="Name" class="validate" required="true" placeholder="Jose Pérez">
+        </span>
 
+        <label for="email">Email*</label>
+        <span class="form--control">
+          <input id="email" type="email" name="Email" class="validate" required="true" placeholder="jose.perez@ejemplo.com">
+        </span>
 
+        <div class="file-field">
+          <label for="files">Archivo*</label>
+          <span class="form--control">
+            <input id="files" type="file">
+            <input class="file-path" type="text" placeholder="clic aquí cargar archivo">
+          </span>
+        </div>
+
+        <div class="div--mid">
+          <button type="submit" onclick="submitForm()">ENVIAR</button>
+        </div>
+
+        <div class="input-field col s12" id = "progress">
+        </div>
+      </div>
+
+      <div id="success" style="display:none">
+        <h5 class="left-align">File Uploaded</h5>
+        <p>Your file has been successfully uploaded.</p>
+      </div>
+    </form>
+  </div>
 </section>

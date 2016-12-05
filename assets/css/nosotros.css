@@ -2,7 +2,6 @@
 ---
 
 /*tools*/
-{% include tools/fonts.css  %}
 {% include tools/normalize.css  %}
 
 /*nosotros page*/

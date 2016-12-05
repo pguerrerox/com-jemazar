@@ -2,11 +2,9 @@
 ---
 
 /*tools*/
-{% include tools/fonts.css  %}
 {% include tools/normalize.css  %}
 
 /*productos page*/
-{% include css/header.css %}
 {% include css/empleo-content.css %}
 {% include tools/buttons.css %}
 {% include css/footer.css %}
