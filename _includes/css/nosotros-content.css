@@ -63,14 +63,13 @@
 .principios__img {
   align-self: center;
   overflow: hidden;
-  width: 450px;
-  height: 300px;
+  width: 600px;
+  height: auto;
   margin: 10px;
 }
 .principios__img img{
-  width: auto;
-  height: 300px;
-  transform: translate(-50%);
+  width: 100%;
+  height: 100%;
 }
 
 /*CLIENTES*/
@@ -118,18 +117,18 @@ hr {
   border: 1px solid #003399;
 }
 
-@media screen and (max-width:920px){
+@media screen and (max-width:1010px){
   .principios__toditos{
     display: flex;
     flex-direction: column;
   }
   .principios__img{
-    width: 100%;
+    width: 75%;
     height: auto;
   }
   .principios__img img{
     width: 100%;
     height: auto;
-    transform: translate(0);
+    /*transform: translate(0);*/
   }
 }
