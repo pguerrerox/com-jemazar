@@ -38,7 +38,7 @@ video {
   vertical-align: baseline;
 }
 .h1-nunito{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
@@ -55,7 +55,7 @@ video {
     margin-bottom:5px;
 }
 h1{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bolder;
   font-size: 35px;
