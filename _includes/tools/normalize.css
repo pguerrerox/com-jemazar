@@ -41,26 +41,28 @@ video {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 50px;
     text-align: center;
     text-transform: uppercase;
 }
 .h2-nunito{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 37px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom:5px;
 }
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: bolder;
   font-size: 35px;
   color:#003399;
   text-align: center;
   text-transform: uppercase;
+  margin-top:5px;
 }
 h2{
   font-family: 'Open Sans', sans-serif;
