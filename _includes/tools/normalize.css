@@ -37,7 +37,7 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
-h1-nunito{
+.h1-nunito{
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -45,7 +45,7 @@ h1-nunito{
     text-align: center;
     text-transform: uppercase;
 }
-h2-nunito{
+.h2-nunito{
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
