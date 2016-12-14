@@ -53,11 +53,10 @@ h2-nunito{
     text-align: center;
     text-transform: uppercase;
 }
-
 h1{
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: bolder;;
+  font-weight: bolder;
   font-size: 35px;
   color:#003399;
   text-align: center;
