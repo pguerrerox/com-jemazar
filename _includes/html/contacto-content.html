@@ -83,31 +83,31 @@
 
   <div class="forma__wrapper">
     <div class="forma__contacto">
-      <form class="form__contacto" id="form__contacto" action="https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 
+      <form class="form__contacto" method="POST" action="https://static-email.herokuapp.com/jemazar-contacto" enctype="multipart/form-data">
         <label for="nombre">Nombre*</label>
-        <span class="form--control">
-          <input name="entry.1561595182" id="entry.1561595182" type="text" placeholder="Jose Pérez" required="true">
+        <span>
+          <input name="name" type="text" placeholder="Jose Pérez" required="true">
         </span>
 
         <label for="e-mail">Email*</label>
-        <span class="form--control">
-          <input name="entry.1342992053" id="entry.1342992053" type="email" placeholder="jose.perez@ejemplo.com" required="true">
+        <span>
+          <input name="email" type="email" placeholder="jose.perez@ejemplo.com" required="true">
         </span>
 
         <label for="ciudad">Ciudad</label>
-        <span class="form--control">
-          <input name="entry.1022856779" id="entry.1022856779" type="text" placeholder="Santiago" required="false">
+        <span>
+          <input name="ciudad" type="text" placeholder="Santiago">
         </span>
 
         <label for="asunto">Asunto</label>
-        <span class="form--control">
-          <input name="entry.1914372494" id="entry.1914372494"type="text" placeholder="Hola Jemazar" required="false">
+        <span>
+          <input name="asunto" type="text" placeholder="Hola Jemazar" required="true">
         </span>
 
         <label for="tema">Tema*</label>
-        <span class="form--control">
-          <select name="entry.620397526" id="entry.620397526" type="text" required="true">
+        <span>
+          <select name="tema" type="text" required="true">
             <option value="Solicitud de información">Solicitud de información</option>
             <option value="Sugerencias y/o Comentarios">Sugerencias y/o Comentarios</option>
             <option value="Servicio al cliente">Servicio al cliente</option>
@@ -115,34 +115,24 @@
         </span>
 
         <label for="mensaje">Mensaje*</label><br>
-        <span class="form--control">
-          <textarea name="entry.1106944345" id="entry.1106944345" rows="8" cols="40" placeholder="Escribe tu mensaje aqui..." required="true"></textarea>
+        <span>
+          <textarea name="mensaje" rows="8" cols="40" placeholder="Escribe tu mensaje aqui..." required="true"></textarea>
         </span>
+
+        <div class="g-recaptcha" data-sitekey="6LeW0hIUAAAAADCej2_UlXjqbLAd354s-X11oKRA"></div>
 
         <div class="div--mid">
           <input type="submit" name="enviar" value="ENVIAR">
         </div>
       </form>
-
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
     </div>
-
-    <!-- https://docs.google.com/forms/d/e/1FAIpQLScRb_jYW2IcQVs6JWat-WWv_N13D0q8vMz_gsP2ws3aqlFMkg/formResponse -->
-    <!--
-    entry.1561595182=pedro
-    entry.1342992053=saddasd@asdf.com
-    entry.1022856779=ciudad
-    entry.1914372494=Asunto
-    entry.620397526=tema
-    entry.1106944345=mensaje
-    -->
 
     <div class="forma__empleo">
       <h3>Solicitud de Empleo</h3>
-      <p>Agradecemos el interés de pertenecer a nuestro equipo, envíanos tu CV.</p>
+      <p>Agradecemos el interés de pertenecer a nuestro equipo, envíanos tu Curriculum Vitae (CV).</p>
       <div class="div--mid">
         <a href="{{site.baseurl}}/pages/empleo.html">
-          <button type="button" name="button">ENVIAR</button>
+          <button type="button" name="button">FORMULARIO</button>
         </a>
       </div>
     </div>

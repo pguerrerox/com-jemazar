@@ -14,44 +14,33 @@
 <section class="info">
   <h2 class="sin--transform align--left no--margin--top">Envianos tu curriculum vitae (CV),</h2>
   <p>
-    Usando el siguiente formulario podras enviarnos tu <strong>curriculum vitae (CV)</strong>, no olvides completar con informacion real, de otra forma no podremos evaluarte.
+    Usando el siguiente formulario podras enviarnos tu <strong>curriculum vitae (CV)</strong>, no olvides completar con informacion real, de otra forma no podremos evaluarte.<br>
+    El formulario solo permite enviar archivos PDF y el tamaño máximo es de 2 megabytes (MB).
   </p>
 </section>
 
 <section class="forma">
   <div class="forma__campos">
-    <form class="form__empleo" id="form" novalidate="novalidate">
-      <div id="forminner">
+    <form class="form__empleo" method="POST" action="https://static-email.herokuapp.com/jemazar-empleo" enctype="multipart/form-data">
+      <label for="name">Nombre*</label>
+      <span>
+        <input name="name" type="text" placeholder="Jose Pérez" required="true">
+      </span>
 
-        <label for="name">Nombre*</label>
-        <span class="form--control">
-          <input id="name" type="text" name="Name" class="validate" required="true" placeholder="Jose Pérez">
-        </span>
+      <label for="email">Email*</label>
+      <span>
+        <input name="email" type="email" placeholder="jose.perez@ejemplo.com" required="true">
+      </span>
 
-        <label for="email">Email*</label>
-        <span class="form--control">
-          <input id="email" type="email" name="Email" class="validate" required="true" placeholder="jose.perez@ejemplo.com">
-        </span>
+      <label for="afile">Archivo*</label><br>
+      <span>
+        <input name="afile" type="file" accept="application/pdf,.pdf " required="true">
+      </span>
 
-        <div class="file-field">
-          <label for="files">Archivo*</label>
-          <span class="form--control">
-            <input id="files" type="file">
-            <input class="file-path" type="text" placeholder="clic aquí cargar archivo">
-          </span>
-        </div>
+      <div class="g-recaptcha" data-sitekey="6LeW0hIUAAAAADCej2_UlXjqbLAd354s-X11oKRA"></div>
 
-        <div class="div--mid">
-          <button type="submit" onclick="submitForm()">ENVIAR</button>
-        </div>
-
-        <div class="input-field col s12" id = "progress">
-        </div>
-      </div>
-
-      <div id="success" style="display:none">
-        <h5 class="left-align">File Uploaded</h5>
-        <p>Your file has been successfully uploaded.</p>
+      <div class="div--mid">
+        <input type="submit" name="enviar" value="ENVIAR">
       </div>
     </form>
   </div>

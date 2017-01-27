@@ -195,6 +195,10 @@ input[type=button]{
   text-align: center;
   margin: 0 10px;
 }
+.g-recaptcha{
+  text-align: -webkit-center;
+  margin: 5px auto 15px auto;
+}
 hr {
   max-width: 1300px;
   width: 100%;

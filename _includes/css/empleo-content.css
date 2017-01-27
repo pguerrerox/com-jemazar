@@ -26,7 +26,7 @@ section{
   background-color: #003399;
 }
 .info{
-  margin: 30px auto 30px auto;
+  margin: 20px auto 20px auto;
 }
 .forma{
   -ms-flex-flow: column;
@@ -56,6 +56,13 @@ textarea, input[type=text], input[type=email], select{
 textarea:focus, input[type=text]:focus, input[type=email]:focus, select:focus{
   border: 2px solid #003399;
 }
+input[type=file]{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  margin: 5px auto 15px auto;
+}
 input[type=button]{
   width: 100%;
   margin: 0 auto;
@@ -64,27 +71,12 @@ input[type=button]{
   text-align: center;
   margin: 0 10px;
 }
+.g-recaptcha{
+  text-align: -webkit-center;
+  margin: 5px auto 15px auto;
+}
 .button span{
   cursor: pointer;
-}
-.file-field{
-  position: relative;
-}
-.file-field input[type=file] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.file-field .file-path{
-  overflow: hidden;
 }
 
 /*GENERICOS*/
