@@ -1,0 +1,9 @@
+---
+---
+
+/*tools*/
+{% include tools/normalize.css  %}
+
+/*productos page*/
+{% include css/novedades-content.css %}
+{% include css/footer.css %}

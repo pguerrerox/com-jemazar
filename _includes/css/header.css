@@ -11,24 +11,7 @@ header{
   height: 25px;
   background-color: #003399;
 }
-.header__lang{
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: right;
-}
-.header__lang a{
-  position:absolute;
-  right:0;
-  font-size: 12px;
-  vertical-align: middle;
-  padding: 3px 0;
-  text-decoration: none;
-  color: #ffffff;
-}
-.header__lang a img{
-  height: 10px;
-}
+
 .header__content{
   max-width: 1000px;
   margin: 0 auto;
@@ -52,8 +35,7 @@ svg.header__logo{
   height: auto;
 }
 .header__navbar{
-  width: 100%;
-  padding: 0 9%;
+  margin: 0 auto;
 }
 .header__navbar a{
   text-decoration: none;
@@ -85,61 +67,6 @@ body#nav__contacto a#nav__contacto{
   color: #003399;
   background-color: #eeeeee;
 }
-.hr{
-  border-left: 2px solid #003399;
-  padding: 7px 0;
-  margin: 0 1.5%;
-}
-.header__redes{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-svg.header__icons{
-  width: 25px;
-  height: auto;
-  padding-left: 10px;
-  fill:#003399;
-}
-svg.header__icons:hover{
-  fill:black;
-}
-.header__search{
-  width:400px;
-}
-.gsc-control-cse, .gsc-control-cse{
-  position: relative;
-  margin: 0;
-  width: 100% !important;
-  padding: 10px !important;
-}
-.gsc-input{
-  /*padding-left: 10px!important;*/
-  padding-right: 0 !important;
-}
-.gsc-input-box{
-  width: 100%;
-  border: 1px solid #003399 !important;
-}
-.gsib_a{
-  padding: 4px 2px 0 2px !important;
-}
-.gsib_a input{
-  padding: 0 !important;
-  background: url("") rgb(255, 255, 255) !important;
-}
-.gsc-search-button input{
-  margin: 5px 0 0 0 !important;
-  border: 1px solid #003399 !important;
-  height: 15px !important;
-  width: 15px !important;
-  padding: 5px !important;
-}
-
 
 .overlay{
   display: none;
