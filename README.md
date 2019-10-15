@@ -3,4 +3,4 @@ Desarrollo de la página [jemazar.com](http://jemazar.com) desarrollada con HTML
 
 Como es una pagina estatica, entiendo que jekyll debe ser sufuciente para manejar todos los recursos necesarios.
 
-*Pagina fuera de servicio...*
+**Pagina fuera de servicio...**
