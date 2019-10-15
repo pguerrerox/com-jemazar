@@ -3,7 +3,7 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 body{
-  background-image: url("{{site.baseurl}}/assets/img/construccion/fondoquesos.jpg");
+  background-image: url("{{site.baseurl}}/assets/construccion/fondoquesos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

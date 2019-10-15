@@ -1,7 +1,22 @@
 #Comment
 
+#jekyll files
 _site
 ids.txt
 
-index_construccion.html
-_includes/construccion
+
+#folders
+_includes/css
+_includes/html
+_includes/icons
+_includes/tools
+assets/css
+assets/img
+assets/js
+assets
+pages
+
+
+#files
+index.html
+sitemap.xml
