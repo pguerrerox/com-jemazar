@@ -19,4 +19,5 @@ pages
 #files
 indexbak.html
 sitemap.xml
-jemazar.code.workspace
+jemazar.code-workspace
+.DS_Store
