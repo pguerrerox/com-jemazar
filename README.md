@@ -12,5 +12,4 @@ Happy coding!
 ### Challenges <sub>(jekyll)</sub>
 - Multi-language Implementation
 
-
-**WEBSITE IS OUT OF SERVICE...**
+### WEBSITE IS OUT OF SERVICE...
